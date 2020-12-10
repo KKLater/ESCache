@@ -7,29 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1AAC6BFA2582715600AA40FE /* ESCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AAC6BF82582715600AA40FE /* ESCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1AAC6C2A258271A600AA40FE /* ESCacheModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC6C24258271A600AA40FE /* ESCacheModel.swift */; };
-		1AAC6C2B258271A600AA40FE /* ESFileCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC6C25258271A600AA40FE /* ESFileCache.swift */; };
-		1AAC6C2C258271A600AA40FE /* ESCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC6C26258271A600AA40FE /* ESCache.swift */; };
-		1AAC6C2D258271A600AA40FE /* ESMemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC6C27258271A600AA40FE /* ESMemoryCache.swift */; };
-		1AAC6C2E258271A600AA40FE /* ESCacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC6C28258271A600AA40FE /* ESCacheable.swift */; };
-		1AAC6C2F258271A600AA40FE /* ESAutoPurgeCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC6C29258271A600AA40FE /* ESAutoPurgeCache.swift */; };
+		1AAC6CB4258275A700AA40FE /* ESCacheModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC6CAE258275A700AA40FE /* ESCacheModel.swift */; };
+		1AAC6CB5258275A700AA40FE /* ESAutoPurgeCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC6CAF258275A700AA40FE /* ESAutoPurgeCache.swift */; };
+		1AAC6CB6258275A700AA40FE /* ESFileCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC6CB0258275A700AA40FE /* ESFileCache.swift */; };
+		1AAC6CB7258275A700AA40FE /* ESMemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC6CB1258275A700AA40FE /* ESMemoryCache.swift */; };
+		1AAC6CB8258275A700AA40FE /* ESCache.h in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC6CB2258275A700AA40FE /* ESCache.h */; };
+		1AAC6CB9258275A700AA40FE /* ESCacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC6CB3258275A700AA40FE /* ESCacheable.swift */; };
+		1AAC6CBE258275F400AA40FE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AAC6CBD258275F400AA40FE /* Info.plist */; };
+		1AAC6D012582781C00AA40FE /* ESFileLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC6CCC2582767900AA40FE /* ESFileLibraryTests.swift */; };
+		1AAC6D022582781C00AA40FE /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC6CC42582765100AA40FE /* XCTestManifests.swift */; };
+		1AAC6D032582781C00AA40FE /* ESFileDocumentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC6CCD2582767900AA40FE /* ESFileDocumentTests.swift */; };
+		1AAC6D042582781C00AA40FE /* ESFileTempTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC6CCF2582767900AA40FE /* ESFileTempTests.swift */; };
+		1AAC6D052582781C00AA40FE /* ESMemoryCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC6CD02582767900AA40FE /* ESMemoryCacheTests.swift */; };
+		1AAC6D062582781C00AA40FE /* ESFileCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAC6CCB2582767900AA40FE /* ESFileCacheTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1AAC6BF52582715600AA40FE /* ESCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ESCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AAC6BF82582715600AA40FE /* ESCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESCache.h; sourceTree = "<group>"; };
-		1AAC6BF92582715600AA40FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1AAC6C24258271A600AA40FE /* ESCacheModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ESCacheModel.swift; path = ../../Sources/ESCache/ESCacheModel.swift; sourceTree = "<group>"; };
-		1AAC6C25258271A600AA40FE /* ESFileCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ESFileCache.swift; path = ../../Sources/ESCache/ESFileCache.swift; sourceTree = "<group>"; };
-		1AAC6C26258271A600AA40FE /* ESCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ESCache.swift; path = ../../Sources/ESCache/ESCache.swift; sourceTree = "<group>"; };
-		1AAC6C27258271A600AA40FE /* ESMemoryCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ESMemoryCache.swift; path = ../../Sources/ESCache/ESMemoryCache.swift; sourceTree = "<group>"; };
-		1AAC6C28258271A600AA40FE /* ESCacheable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ESCacheable.swift; path = ../../Sources/ESCache/ESCacheable.swift; sourceTree = "<group>"; };
-		1AAC6C29258271A600AA40FE /* ESAutoPurgeCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ESAutoPurgeCache.swift; path = ../../Sources/ESCache/ESAutoPurgeCache.swift; sourceTree = "<group>"; };
+		1AAC6CAE258275A700AA40FE /* ESCacheModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESCacheModel.swift; sourceTree = "<group>"; };
+		1AAC6CAF258275A700AA40FE /* ESAutoPurgeCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESAutoPurgeCache.swift; sourceTree = "<group>"; };
+		1AAC6CB0258275A700AA40FE /* ESFileCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESFileCache.swift; sourceTree = "<group>"; };
+		1AAC6CB1258275A700AA40FE /* ESMemoryCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESMemoryCache.swift; sourceTree = "<group>"; };
+		1AAC6CB2258275A700AA40FE /* ESCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESCache.h; sourceTree = "<group>"; };
+		1AAC6CB3258275A700AA40FE /* ESCacheable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESCacheable.swift; sourceTree = "<group>"; };
+		1AAC6CBD258275F400AA40FE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AAC6CC42582765100AA40FE /* XCTestManifests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		1AAC6CCB2582767900AA40FE /* ESFileCacheTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESFileCacheTests.swift; sourceTree = "<group>"; };
+		1AAC6CCC2582767900AA40FE /* ESFileLibraryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESFileLibraryTests.swift; sourceTree = "<group>"; };
+		1AAC6CCD2582767900AA40FE /* ESFileDocumentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESFileDocumentTests.swift; sourceTree = "<group>"; };
+		1AAC6CCF2582767900AA40FE /* ESFileTempTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESFileTempTests.swift; sourceTree = "<group>"; };
+		1AAC6CD02582767900AA40FE /* ESMemoryCacheTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESMemoryCacheTests.swift; sourceTree = "<group>"; };
+		1AAC6CE4258277E700AA40FE /* ESCacheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ESCacheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AAC6CE8258277E700AA40FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1AAC6BF22582715600AA40FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AAC6CE1258277E700AA40FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,7 +62,8 @@
 		1AAC6BEB2582715600AA40FE = {
 			isa = PBXGroup;
 			children = (
-				1AAC6BF72582715600AA40FE /* ESCache */,
+				1AAC6CAC258275A700AA40FE /* Sources */,
+				1AAC6CC12582765100AA40FE /* Tests */,
 				1AAC6BF62582715600AA40FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,23 +72,53 @@
 			isa = PBXGroup;
 			children = (
 				1AAC6BF52582715600AA40FE /* ESCache.framework */,
+				1AAC6CE4258277E700AA40FE /* ESCacheTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1AAC6BF72582715600AA40FE /* ESCache */ = {
+		1AAC6CAC258275A700AA40FE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				1AAC6C29258271A600AA40FE /* ESAutoPurgeCache.swift */,
-				1AAC6C26258271A600AA40FE /* ESCache.swift */,
-				1AAC6C28258271A600AA40FE /* ESCacheable.swift */,
-				1AAC6C24258271A600AA40FE /* ESCacheModel.swift */,
-				1AAC6C25258271A600AA40FE /* ESFileCache.swift */,
-				1AAC6C27258271A600AA40FE /* ESMemoryCache.swift */,
-				1AAC6BF82582715600AA40FE /* ESCache.h */,
-				1AAC6BF92582715600AA40FE /* Info.plist */,
+				1AAC6CB2258275A700AA40FE /* ESCache.h */,
+				1AAC6CBD258275F400AA40FE /* Info.plist */,
+				1AAC6CAD258275A700AA40FE /* ESCache */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		1AAC6CAD258275A700AA40FE /* ESCache */ = {
+			isa = PBXGroup;
+			children = (
+				1AAC6CAE258275A700AA40FE /* ESCacheModel.swift */,
+				1AAC6CAF258275A700AA40FE /* ESAutoPurgeCache.swift */,
+				1AAC6CB0258275A700AA40FE /* ESFileCache.swift */,
+				1AAC6CB1258275A700AA40FE /* ESMemoryCache.swift */,
+				1AAC6CB3258275A700AA40FE /* ESCacheable.swift */,
 			);
 			path = ESCache;
+			sourceTree = "<group>";
+		};
+		1AAC6CC12582765100AA40FE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1AAC6CC32582765100AA40FE /* ESCacheTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		1AAC6CC32582765100AA40FE /* ESCacheTests */ = {
+			isa = PBXGroup;
+			children = (
+				1AAC6CE8258277E700AA40FE /* Info.plist */,
+				1AAC6CC42582765100AA40FE /* XCTestManifests.swift */,
+				1AAC6CCB2582767900AA40FE /* ESFileCacheTests.swift */,
+				1AAC6CCD2582767900AA40FE /* ESFileDocumentTests.swift */,
+				1AAC6CCC2582767900AA40FE /* ESFileLibraryTests.swift */,
+				1AAC6CCF2582767900AA40FE /* ESFileTempTests.swift */,
+				1AAC6CD02582767900AA40FE /* ESMemoryCacheTests.swift */,
+			);
+			path = ESCacheTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,7 +128,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AAC6BFA2582715600AA40FE /* ESCache.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,17 +152,38 @@
 			productReference = 1AAC6BF52582715600AA40FE /* ESCache.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		1AAC6CE3258277E700AA40FE /* ESCacheTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AAC6CE9258277E700AA40FE /* Build configuration list for PBXNativeTarget "ESCacheTests" */;
+			buildPhases = (
+				1AAC6CE0258277E700AA40FE /* Sources */,
+				1AAC6CE1258277E700AA40FE /* Frameworks */,
+				1AAC6CE2258277E700AA40FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ESCacheTests;
+			productName = ESCacheTests;
+			productReference = 1AAC6CE4258277E700AA40FE /* ESCacheTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		1AAC6BEC2582715600AA40FE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					1AAC6BF42582715600AA40FE = {
 						CreatedOnToolsVersion = 12.2;
 						LastSwiftMigration = 1220;
+					};
+					1AAC6CE3258277E700AA40FE = {
+						CreatedOnToolsVersion = 12.2;
 					};
 				};
 			};
@@ -130,12 +201,21 @@
 			projectRoot = "";
 			targets = (
 				1AAC6BF42582715600AA40FE /* ESCache */,
+				1AAC6CE3258277E700AA40FE /* ESCacheTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1AAC6BF32582715600AA40FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAC6CBE258275F400AA40FE /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AAC6CE2258277E700AA40FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -149,12 +229,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AAC6C2E258271A600AA40FE /* ESCacheable.swift in Sources */,
-				1AAC6C2C258271A600AA40FE /* ESCache.swift in Sources */,
-				1AAC6C2B258271A600AA40FE /* ESFileCache.swift in Sources */,
-				1AAC6C2F258271A600AA40FE /* ESAutoPurgeCache.swift in Sources */,
-				1AAC6C2A258271A600AA40FE /* ESCacheModel.swift in Sources */,
-				1AAC6C2D258271A600AA40FE /* ESMemoryCache.swift in Sources */,
+				1AAC6CB9258275A700AA40FE /* ESCacheable.swift in Sources */,
+				1AAC6CB8258275A700AA40FE /* ESCache.h in Sources */,
+				1AAC6CB7258275A700AA40FE /* ESMemoryCache.swift in Sources */,
+				1AAC6CB5258275A700AA40FE /* ESAutoPurgeCache.swift in Sources */,
+				1AAC6CB6258275A700AA40FE /* ESFileCache.swift in Sources */,
+				1AAC6CB4258275A700AA40FE /* ESCacheModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AAC6CE0258277E700AA40FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAC6D062582781C00AA40FE /* ESFileCacheTests.swift in Sources */,
+				1AAC6D012582781C00AA40FE /* ESFileLibraryTests.swift in Sources */,
+				1AAC6D042582781C00AA40FE /* ESFileTempTests.swift in Sources */,
+				1AAC6D032582781C00AA40FE /* ESFileDocumentTests.swift in Sources */,
+				1AAC6D052582781C00AA40FE /* ESMemoryCacheTests.swift in Sources */,
+				1AAC6D022582781C00AA40FE /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +441,42 @@
 			};
 			name = Release;
 		};
+		1AAC6CEA258277E700AA40FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F47987WD3;
+				INFOPLIST_FILE = Tests/ESCacheTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lshxin.ESCacheTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AAC6CEB258277E700AA40FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F47987WD3;
+				INFOPLIST_FILE = Tests/ESCacheTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lshxin.ESCacheTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -365,6 +494,15 @@
 			buildConfigurations = (
 				1AAC6BFE2582715600AA40FE /* Debug */,
 				1AAC6BFF2582715600AA40FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AAC6CE9258277E700AA40FE /* Build configuration list for PBXNativeTarget "ESCacheTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AAC6CEA258277E700AA40FE /* Debug */,
+				1AAC6CEB258277E700AA40FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

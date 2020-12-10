@@ -1,8 +1,8 @@
 //
-//  File.swift
+//  ESCache.h
+//  ESCache
 //
-//
-//  Created by 罗树新 on 2020/12/9.
+//  Created by 罗树新 on 2020/12/10.
 //
 //  Copyright (c) 2020 Later<lshxin89@126.com>
 //
@@ -24,15 +24,15 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-#if !os(watchOS)
-import XCTest
 
-#if !canImport(ObjectiveC)
-public func allTests() -> [XCTestCaseEntry] {
-    return [
-        testCase(CacheTests.allTests),
-    ]
-}
-#endif
-#endif
+#import <Foundation/Foundation.h>
+
+//! Project version number for ESCache.
+FOUNDATION_EXPORT double ESCacheVersionNumber;
+
+//! Project version string for ESCache.
+FOUNDATION_EXPORT const unsigned char ESCacheVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <ESCache/PublicHeader.h>
+
 

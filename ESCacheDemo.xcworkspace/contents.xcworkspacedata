@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:ESCache-Demo/ESCache-Demo.xcodeproj">
+      location = "group:ESCache.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ESCache/ESCache.xcodeproj">
+      location = "group:ESCache-Demo/ESCache-Demo.xcodeproj">
    </FileRef>
 </Workspace>
