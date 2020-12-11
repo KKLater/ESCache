@@ -37,9 +37,7 @@ public class ESAutoPurgeCache<String, ObjectType>: NSCache<AnyObject, AnyObject>
         addNotification()
     }
     
-    deinit {
-        removeNotification()
-    }
+    deinit { removeNotification() }
     
     private func addNotification() {
         removeNotification()

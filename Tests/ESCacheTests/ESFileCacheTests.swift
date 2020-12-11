@@ -132,12 +132,25 @@ final class ESFileCacheTests: XCTestCase {
         }
     }
     
+    func testPrivateCache() {
+        let str = "save string object"
+        let key = "saveKey"
+        
+        let cache = ESFileCache(name: "private", directory: .cache)
+        let success = cache.save(str, for: key)
+        XCTAssertEqual(success, true, "字符串保存失败")
+        let value = cache.string(for: key)
+        XCTAssertEqual(value, str, "字符串取出失败")
+    }
+    
     static var allTests = [
         ("字符串存取测试", testStringCache),
         ("对象存取测试", testObjectCache),
         ("是否有缓存数据校验测试", testExisit),
         ("存储未过期测试", testInExpiresCache),
         ("存储过期测试", testOutExpiresCache),
+        ("创建实例存取测试", testPrivateCache),
+
     ]
 }
 
