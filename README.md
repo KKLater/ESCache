@@ -2,16 +2,16 @@
 
 ----
 
-[开始使用](#开始使用) 
-    [要求](#要求)
-    [安装](#安装)
-        [Swift Package Manager (推荐)](#Swift Package Manager (推荐))
-        [Cocoapods](#Cocoapods)
-    [使用](#使用)
-        [内存存取](#内存存取)
-        [文件存取](#文件存取)
-    [其他](#其他)
-    [许可协议](#许可协议)
+* [开始使用](#开始使用) 
+    * [要求](#要求)
+    * [安装](#安装)
+        * [Swift Package Manager](#SwiftPackageManager)
+        * [Cocoapods](#Cocoapods)
+    * [使用](#使用)
+        * [内存存取](#内存存取)
+        * [文件存取](#文件存取)
+* [其他](#其他)
+* [许可协议](#许可协议)
 
 ----
 
@@ -25,7 +25,7 @@
 
 ### <span id="安装">安装</span>
 
-#### <span id="Swift Package Manager (推荐)">Swift Package Manager (推荐)</span>
+#### <span id="SwiftPackageManager">Swift Package Manager (推荐)</span>
 
 ```swift
 package.dependencies += [
