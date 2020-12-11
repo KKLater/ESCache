@@ -2,21 +2,30 @@
 
 ----
 
-[TOC]
+[开始使用](#开始使用) 
+    [要求](#要求)
+    [安装](#安装)
+        [Swift Package Manager (推荐)](#Swift Package Manager (推荐))
+        [Cocoapods](#Cocoapods)
+    [使用](#使用)
+        [内存存取](#内存存取)
+        [文件存取](#文件存取)
+    [其他](#其他)
+    [许可协议](#许可协议)
 
 ----
 
 [ESCache](https://github.com/KKLater/ESCache) 是对常用缓存方案的封装，意在提供方便的内存管理、磁盘存储管理方案。
 
-## 开始使用
+##  <span id="开始使用">开始使用</span>
 
-### 要求
+### <span id="要求">要求</span>
 
 * Swift 5.0
 
-### 安装
+### <span id="安装">安装</span>
 
-#### Swift Package Manager (推荐)
+#### <span id="Swift Package Manager (推荐)">Swift Package Manager (推荐)</span>
 
 ```swift
 package.dependencies += [
@@ -24,15 +33,15 @@ package.dependencies += [
 ]
 ```
 
-#### Cocoapods
+#### <span id="Cocoapods">Cocoapods</span>
 
 ```sh
 pod 'ESCache', "~> 0.0.1"
 ```
 
-### 使用
+### <span id="使用">使用</span>
 
-#### 内存存取
+#### <span id="内存存取">内存存取</span>
 
 ##### 单例存取
 
@@ -63,7 +72,7 @@ let value = cache.string(for: key)
 
 需要注意的是实例的创建需要一个缓存名称命名，如果没有设置名称，则创建的缓存实例名称与 `default` 单例一致。
 
-#### 文件存取
+#### <span id="文件存取">文件存取</span>
 
 ##### 单例
 
@@ -115,7 +124,7 @@ let value = cache.string(for: key)
 
 实例创建时提供的 `name` 和 `directory` 构成文件存储路径。
 
-### 其他
+### <span id="其他">其他</span>
 
 
 
@@ -134,7 +143,7 @@ public func save<T>(_ object: T, for key: String, expires: Date? = nil) -> Bool 
 
 [ESAutoPurgeCache](https://github.com/KKLater/ESCache/blob/main/Sources/ESCache/ESAutoPurgeCache.swift) 在 `UIKit` 框架下，在接收到系统内存警告的时候，会自动执行 `removeAllObjects` 清理内存。
 
-## 许可协议
+## <span id="许可协议">许可协议</span>
 
 [ESCache](https://github.com/KKLater/ESCache) 以 MIT 协议发布. 查看 [LICENSE](https://github.com/KKLater/ESCache/blob/main/LICENSE) 获取更多信息.
 
