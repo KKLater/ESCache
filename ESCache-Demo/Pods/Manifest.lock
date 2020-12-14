@@ -1,0 +1,16 @@
+PODS:
+  - ESCache (0.0.1)
+
+DEPENDENCIES:
+  - ESCache (from `../`)
+
+EXTERNAL SOURCES:
+  ESCache:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ESCache: 533cebd56c12dcf5854e0bc86ff4a81134eec85a
+
+PODFILE CHECKSUM: ad85d89856278ed7fa79d7c61a1be7872f4d01c3
+
+COCOAPODS: 1.10.0

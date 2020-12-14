@@ -1,0 +1,49 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'ESCache-Demo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+ pod 'ESCache', :path => '../'
+
+end
+
+target 'ESCache-Demo-macos' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+ pod 'ESCache', :path => '../'
+
+end
+
+target 'ESCache-Demo-tvos' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+ pod 'ESCache', :path => '../'
+
+end
+
+target 'ESCache-Demo-watchos' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+ pod 'ESCache', :path => '../'
+
+end
+
+target 'ESCache-Demo-watchos WatchKit App' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+ pod 'ESCache', :path => '../'
+
+end
+
+target 'ESCache-Demo-watchos WatchKit Extension' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+ pod 'ESCache', :path => '../'
+
+end

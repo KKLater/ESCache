@@ -1,0 +1,6 @@
+framework module ESCache {
+  umbrella header "ESCache-iOS14.2-umbrella.h"
+
+  export *
+  module * { export * }
+}

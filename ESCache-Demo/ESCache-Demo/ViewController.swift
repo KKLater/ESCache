@@ -31,9 +31,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        ESFileCache.cache.save("saveValue", for: "saveKey")
-        let value = ESFileCache.cache.string(for: "saveKey")
-        print(value?)
+        FileCache.cache.save("saveValue", for: "saveKey")
+        let value = FileCache.cache.string(for: "saveKey")
+        print(value ?? "")
     }
 
 

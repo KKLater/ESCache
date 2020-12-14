@@ -35,9 +35,9 @@ class InterfaceController: WKInterfaceController {
     }
     
     override func willActivate() {
-        ESFileCache.cache.save("saveValue", for: "saveKey")
-        let value = ESFileCache.cache.string(for: "saveKey")
-        print(value?)
+        FileCache.cache.save("saveValue", for: "saveKey")
+        let value = FileCache.cache.string(for: "saveKey")
+        print(value ?? "")
     }
     
     override func didDeactivate() {

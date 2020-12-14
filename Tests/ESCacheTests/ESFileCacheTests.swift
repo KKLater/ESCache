@@ -1,5 +1,5 @@
 //
-//  ESFileCacheTests.swift
+//  FileCacheTests.swift
 //
 //
 //  Created by 罗树新 on 2020/12/9.
@@ -28,20 +28,20 @@
 import XCTest
 @testable import ESCache
 
-final class ESFileCacheTests: XCTestCase {
+final class FileCacheTests: XCTestCase {
     func testStringCache() {
         let str = "save string object"
         let key = "saveKey"
         
         
-        let success = ESFileCache.default.save(str, for: key)
+        let success = FileCache.default.save(str, for: key)
         XCTAssertEqual(success, true, "字符串保存失败")
-        let value = ESFileCache.default.string(for: key)
+        let value = FileCache.default.string(for: key)
         XCTAssertEqual(value, str, "字符串取出失败")
     }
     
     func testObjectCache() {
-        @objc(_TtCFC10CacheTests14ESFileCacheTests15testObjectCacheFT_T_L_3Obj)class Obj: NSObject, NSSecureCoding {
+        @objc(_TtCFC10CacheTests14FileCacheTests15testObjectCacheFT_T_L_3Obj)class Obj: NSObject, NSSecureCoding {
             static var supportsSecureCoding: Bool = true
             
             func encode(with coder: NSCoder) {
@@ -82,9 +82,9 @@ final class ESFileCacheTests: XCTestCase {
         }
         let key = "obj"
         let obj = Obj()
-        let success = ESFileCache.default.save(obj, for: key)
+        let success = FileCache.default.save(obj, for: key)
         XCTAssertEqual(success, true, "对象保存失败")
-        if let o = ESFileCache.default.object(for: key) as? Obj {
+        if let o = FileCache.default.object(for: key) as? Obj {
             XCTAssertEqual(o, obj, "对象取出失败")
         }
     }
@@ -92,23 +92,23 @@ final class ESFileCacheTests: XCTestCase {
     func testExisit() {
         let str = "save string object"
         let key = "saveKey"
-        let success = ESFileCache.default.save(str, for: key)
+        let success = FileCache.default.save(str, for: key)
         XCTAssertEqual(success, true, "字符串保存失败")
-        let exisit = ESFileCache.default.exists(for: key)
+        let exisit = FileCache.default.exists(for: key)
         XCTAssertEqual(exisit, true, "校验存储失败")
     }
     
     func testInExpiresCache() {
         let str = "save string object"
         let key = "saveKey"
-        let success = ESFileCache.default.save(str, for: key, expires: Date(timeIntervalSinceNow: 5))
+        let success = FileCache.default.save(str, for: key, expires: Date(timeIntervalSinceNow: 5))
         XCTAssertEqual(success, true, "字符串保存失败")
         let promise4 = expectation(description: "Just wait 4 seconds")
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + DispatchTimeInterval.seconds(4)) {
             promise4.fulfill()
-            let exisit = ESFileCache.default.exists(for: key)
+            let exisit = FileCache.default.exists(for: key)
             XCTAssertEqual(exisit, true, "校验存储失败")
-            let newValue = ESFileCache.default.string(for: key)
+            let newValue = FileCache.default.string(for: key)
             XCTAssertEqual(newValue, str, "数据到期前有效校验失败")
         }
         waitForExpectations(timeout: 5) { (error) in
@@ -118,14 +118,14 @@ final class ESFileCacheTests: XCTestCase {
     func testOutExpiresCache() {
         let str = "save string object"
         let key = "saveKey"
-        let success = ESFileCache.default.save(str, for: key, expires: Date(timeIntervalSinceNow: 5))
+        let success = FileCache.default.save(str, for: key, expires: Date(timeIntervalSinceNow: 5))
         XCTAssertEqual(success, true, "字符串保存失败")
         let promise6 = expectation(description: "Just wait 6 seconds")
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + DispatchTimeInterval.seconds(6)) {
             promise6.fulfill()
-            let exisit = ESFileCache.default.exists(for: key)
+            let exisit = FileCache.default.exists(for: key)
             XCTAssertEqual(exisit, false, "校验存储失败")
-            let newValue = ESFileCache.default.string(for: key)
+            let newValue = FileCache.default.string(for: key)
             XCTAssertNil(newValue, "数据到期后无效校验失败")
         }
         waitForExpectations(timeout: 6) { (error) in
@@ -136,7 +136,7 @@ final class ESFileCacheTests: XCTestCase {
         let str = "save string object"
         let key = "saveKey"
         
-        let cache = ESFileCache(name: "private", directory: .cache)
+        let cache = FileCache(name: "private", directory: .cache)
         let success = cache.save(str, for: key)
         XCTAssertEqual(success, true, "字符串保存失败")
         let value = cache.string(for: key)

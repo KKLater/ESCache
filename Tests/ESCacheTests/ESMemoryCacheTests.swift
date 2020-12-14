@@ -1,5 +1,5 @@
 //
-//  ESMemoryCacheTests.swift
+//  MemoryCacheTests.swift
 //  
 //
 //  Created by 罗树新 on 2020/12/9.
@@ -28,15 +28,15 @@
 import XCTest
 @testable import ESCache
 
-final class ESMemoryCacheTests: XCTestCase {
+final class MemoryCacheTests: XCTestCase {
     func testStringCache() {
         let str = "save string object"
         let key = "saveKey"
         
         
-        let success = ESMemoryCache.default.save(str, for: key)
+        let success = MemoryCache.default.save(str, for: key)
         XCTAssertEqual(success, true, "字符串保存失败")
-        let value = ESMemoryCache.default.string(for: key)
+        let value = MemoryCache.default.string(for: key)
         XCTAssertEqual(value, str, "字符串取出失败")
     }
     
@@ -82,9 +82,9 @@ final class ESMemoryCacheTests: XCTestCase {
         }
         let key = "obj"
         let obj = Obj()
-        let success = ESMemoryCache.default.save(obj, for: key)
+        let success = MemoryCache.default.save(obj, for: key)
         XCTAssertEqual(success, true, "对象保存失败")
-        if let o = ESMemoryCache.default.object(for: key) as? Obj {
+        if let o = MemoryCache.default.object(for: key) as? Obj {
             XCTAssertEqual(o, obj, "对象取出失败")
         }
     }
@@ -92,23 +92,23 @@ final class ESMemoryCacheTests: XCTestCase {
     func testExisit() {
         let str = "save string object"
         let key = "saveKey"
-        let success = ESMemoryCache.default.save(str, for: key)
+        let success = MemoryCache.default.save(str, for: key)
         XCTAssertEqual(success, true, "字符串保存失败")
-        let exisit = ESMemoryCache.default.exists(for: key)
+        let exisit = MemoryCache.default.exists(for: key)
         XCTAssertEqual(exisit, true, "校验存储失败")
     }
     
     func testInExpiresCache() {
         let str = "save string object"
         let key = "saveKey"
-        let success = ESMemoryCache.default.save(str, for: key, expires: Date(timeIntervalSinceNow: 5))
+        let success = MemoryCache.default.save(str, for: key, expires: Date(timeIntervalSinceNow: 5))
         XCTAssertEqual(success, true, "字符串保存失败")
         let promise4 = expectation(description: "Just wait 4 seconds")
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + DispatchTimeInterval.seconds(4)) {
             promise4.fulfill()
-            let exisit = ESMemoryCache.default.exists(for: key)
+            let exisit = MemoryCache.default.exists(for: key)
             XCTAssertEqual(exisit, true, "校验存储失败")
-            let newValue = ESMemoryCache.default.string(for: key)
+            let newValue = MemoryCache.default.string(for: key)
             XCTAssertEqual(newValue, str, "数据到期前有效校验失败")
         }
         waitForExpectations(timeout: 5) { (error) in
@@ -118,14 +118,14 @@ final class ESMemoryCacheTests: XCTestCase {
     func testOutExpiresCache() {
         let str = "save string object"
         let key = "saveKey"
-        let success = ESMemoryCache.default.save(str, for: key, expires: Date(timeIntervalSinceNow: 5))
+        let success = MemoryCache.default.save(str, for: key, expires: Date(timeIntervalSinceNow: 5))
         XCTAssertEqual(success, true, "字符串保存失败")
         let promise6 = expectation(description: "Just wait 6 seconds")
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + DispatchTimeInterval.seconds(6)) {
             promise6.fulfill()
-            let exisit = ESMemoryCache.default.exists(for: key)
+            let exisit = MemoryCache.default.exists(for: key)
             XCTAssertEqual(exisit, false, "校验存储失败")
-            let newValue = ESMemoryCache.default.string(for: key)
+            let newValue = MemoryCache.default.string(for: key)
             XCTAssertNil(newValue, "数据到期后无效校验失败")
         }
         waitForExpectations(timeout: 6) { (error) in
@@ -136,7 +136,7 @@ final class ESMemoryCacheTests: XCTestCase {
         let str = "save string object"
         let key = "saveKey"
         
-        let cache = ESMemoryCache(name: "creat")
+        let cache = MemoryCache(name: "creat")
         let success = cache.save(str, for: key)
         XCTAssertEqual(success, true, "字符串保存失败")
         let value = cache.string(for: key)
