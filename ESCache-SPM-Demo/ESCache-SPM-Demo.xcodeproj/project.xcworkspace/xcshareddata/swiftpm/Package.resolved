@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ESCache",
+        "repositoryURL": "https://github.com/KKLater/ESCache.git",
+        "state": {
+          "branch": "dev",
+          "revision": "7353d4a0b0290bb8a30b9ce841deeb5068ccba7c",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
