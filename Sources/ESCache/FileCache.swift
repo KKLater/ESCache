@@ -24,7 +24,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-#if TARGET_OS_IPHONE
+#if !os(macOS)
 import UIKit
 #else
 import Foundation
@@ -101,7 +101,7 @@ public class FileCache {
         let url = Directory.url(for: directory)
         self.directoryUrl = url.appendingPathComponent(name)
         try? FileManager.default.createDirectory(at: self.directoryUrl, withIntermediateDirectories: true, attributes: nil)
-        #if TARGET_OS_IPHONE
+        #if os(iOS) || os(tvOS)
         _addNotificationObserver()
         #endif
     }
@@ -110,7 +110,7 @@ public class FileCache {
         return directoryUrl.appendingPathComponent(key, isDirectory: false)
     }
     
-    public func cleanMemoryCache() {
+    @objc public func cleanMemoryCache() {
         lock.lock()
         autoCache.removeAllObjects()
         lock.unlock()
@@ -193,7 +193,7 @@ public class FileCache {
         }
     }
     
-    #if TARGET_OS_IPHONE
+    #if os(iOS) || os(tvOS)
     /// App 退到后台时候，清理磁盘存储
     @objc func cleanDickBackground() {
         var bgTask:UIBackgroundTaskIdentifier?
@@ -215,10 +215,14 @@ public class FileCache {
         }
     }
     
+    @objc func _self_cleanDisk() {
+        cleanDist()
+    }
+    
     //MARK: Private
     private func _addNotificationObserver() {
         _removeNotificationObserver()
-        NotificationCenter.default.addObserver(self, selector: #selector(clearMemory), name: UIApplication.didReceiveMemoryWarningNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(cleanMemoryCache), name: UIApplication.didReceiveMemoryWarningNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(_self_cleanDisk), name: UIApplication.willTerminateNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(cleanDickBackground), name: UIApplication.didEnterBackgroundNotification, object: nil)
     }

@@ -24,7 +24,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-#if TARGET_OS_IPHONE
+#if os(iOS) || os(tvOS)
 import UIKit
 /// 自动清理缓存
 ///

@@ -1,5 +1,5 @@
 framework module ESCache {
-  umbrella header "ESCache-tvOS14.2-umbrella.h"
+  umbrella header "ESCache-watchOS-umbrella.h"
 
   export *
   module * { export * }

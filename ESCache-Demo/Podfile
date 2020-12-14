@@ -4,6 +4,7 @@
 target 'ESCache-Demo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  platform :ios, '9.0'
 
  pod 'ESCache', :path => '../'
 
@@ -12,22 +13,21 @@ end
 target 'ESCache-Demo-macos' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  platform :macos, '10.10'
  pod 'ESCache', :path => '../'
 
 end
 
 target 'ESCache-Demo-tvos' do
-  # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  platform :tvos, '10.10'
  pod 'ESCache', :path => '../'
 
 end
 
 target 'ESCache-Demo-watchos' do
-  # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  platform :watchos, '3.0'
  pod 'ESCache', :path => '../'
 
 end
@@ -35,6 +35,7 @@ end
 target 'ESCache-Demo-watchos WatchKit App' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  platform :watchos, '3.0'
 
  pod 'ESCache', :path => '../'
 
@@ -43,6 +44,7 @@ end
 target 'ESCache-Demo-watchos WatchKit Extension' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  platform :watchos, '3.0'
 
  pod 'ESCache', :path => '../'
 

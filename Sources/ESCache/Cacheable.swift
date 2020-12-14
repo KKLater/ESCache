@@ -26,6 +26,12 @@
 
 import Foundation
 
+#if !os(macOS)
+import UIKit
+#else
+import AppKit
+#endif
+
 public protocol Cacheable {
     
     /// 缓存 Data 数据
@@ -115,4 +121,30 @@ extension Cacheable {
         }
         return obj
     }
+    
+    #if !os(macOS)
+    public func save(_ image: UIImage, for key: String, expires: Date? = nil) -> Bool {
+        guard let data = image.pngData() else { return false }
+        return save(data, for: key, expires: expires)
+    }
+    
+    public func image(for key: String) -> UIImage? {
+        guard let data = data(for: key), let img = UIImage(data: data) else {
+            return nil
+        }
+        return img
+    }
+    #else
+    public func save(_ image: NSImage, for key: String, expires: Date? = nil) -> Bool {
+        guard let data = image.tiffRepresentation else { return false }
+        return save(data, for: key, expires: expires)
+    }
+    
+    public func image(for key: String) -> NSImage? {
+        guard let data = data(for: key), let img = NSImage(data: data) else {
+            return nil
+        }
+        return img
+    }
+    #endif
 }

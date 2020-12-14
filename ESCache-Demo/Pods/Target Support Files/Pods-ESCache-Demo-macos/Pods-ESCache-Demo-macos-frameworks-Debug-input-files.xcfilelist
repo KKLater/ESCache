@@ -1,2 +1,2 @@
 ${PODS_ROOT}/Target Support Files/Pods-ESCache-Demo-macos/Pods-ESCache-Demo-macos-frameworks.sh
-${BUILT_PRODUCTS_DIR}/ESCache-macOS10.15/ESCache.framework
+${BUILT_PRODUCTS_DIR}/ESCache-macOS/ESCache.framework
