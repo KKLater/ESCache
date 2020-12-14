@@ -79,6 +79,71 @@ extension Cacheable {
         return save(data, for: key, expires: expires)
     }
     
+    /// 查询缓存的字符串
+    /// - Parameter key: 缓存键值
+    /// - Returns: 缓存的数据
+    ///
+    /// 如果根据键值查询到数据，但是数据设置过期时间并已经过期，则会清理到缓存数据，查询为空
+    /// 如果根据键值查询到数据，数据没有设置过期时间或者设置过期时间有效期内，则查询成功
+    public func string(for key: String) -> String? {
+        guard let data = data(for: key), let str = String(data: data, encoding: .utf8) else {
+            return nil
+        }
+        return str
+    }
+    
+    #if !os(macOS)
+    
+    /// 存储图片
+    /// - Parameters:
+    ///   - image: 图片
+    ///   - key: 缓存键值
+    ///   - expires: 过期时间
+    /// - Returns: 是否缓存成功
+    @discardableResult
+    public func save(_ image: UIImage, for key: String, expires: Date? = nil) -> Bool {
+        guard let data = image.pngData() else { return false }
+        return save(data, for: key, expires: expires)
+    }
+    
+    /// 图片获取
+    /// - Parameter key: 缓存键值
+    /// - Returns: 查询缓存的图片
+    public func image(for key: String) -> UIImage? {
+        guard let data = data(for: key), let img = UIImage(data: data) else {
+            return nil
+        }
+        return img
+    }
+    
+    #else
+    
+    /// 存储图片
+    /// - Parameters:
+    ///   - image: 图片
+    ///   - key: 缓存键值
+    ///   - expires: 过期时间
+    /// - Returns: 是否缓存成功
+    @discardableResult
+    public func save(_ image: NSImage, for key: String, expires: Date? = nil) -> Bool {
+        guard let data = image.tiffRepresentation else { return false }
+        return save(data, for: key, expires: expires)
+    }
+    
+    /// 图片获取
+    /// - Parameter key: 缓存键值
+    /// - Returns: 查询缓存的图片
+    public func image(for key: String) -> NSImage? {
+        guard let data = data(for: key), let img = NSImage(data: data) else {
+            return nil
+        }
+        return img
+    }
+    #endif
+}
+
+extension Cacheable {
+ 
     /// 对象缓存
     /// - Parameters:
     ///   - object: 对象数据，必须继承于 NSObject 并且实现 NSSecureCoding
@@ -96,19 +161,6 @@ extension Cacheable {
         }
     }
     
-    /// 查询缓存的字符串
-    /// - Parameter key: 缓存键值
-    /// - Returns: 缓存的数据
-    ///
-    /// 如果根据键值查询到数据，但是数据设置过期时间并已经过期，则会清理到缓存数据，查询为空
-    /// 如果根据键值查询到数据，数据没有设置过期时间或者设置过期时间有效期内，则查询成功
-    public func string(for key: String) -> String? {
-        guard let data = data(for: key), let str = String(data: data, encoding: .utf8) else {
-            return nil
-        }
-        return str
-    }
-    
     /// 查询缓存的对象数据
     /// - Parameter key: 缓存键值
     /// - Returns: 缓存的数据
@@ -121,30 +173,34 @@ extension Cacheable {
         }
         return obj
     }
+}
+
+extension Cacheable {
     
-    #if !os(macOS)
-    public func save(_ image: UIImage, for key: String, expires: Date? = nil) -> Bool {
-        guard let data = image.pngData() else { return false }
+    /// 对象缓存
+    /// - Parameters:
+    ///   - object: 对象数据
+    ///   - key: 缓存键值
+    ///   - expires: 过期时间
+    /// - Returns: 是否缓存成功
+    @discardableResult
+    public func save<T: Codable>(_ codable: T, for key: String, expires: Date? = nil) -> Bool {
+        guard let data =  try? JSONEncoder().encode(codable) else {
+            return false
+        }
         return save(data, for: key, expires: expires)
     }
     
-    public func image(for key: String) -> UIImage? {
-        guard let data = data(for: key), let img = UIImage(data: data) else {
+    /// 查询缓存的对象数据
+    /// - Parameter key: 缓存键值
+    /// - Returns: 缓存的数据
+    ///
+    /// 如果根据键值查询到数据，但是数据设置过期时间并已经过期，则会清理到缓存数据，查询为空
+    /// 如果根据键值查询到数据，数据没有设置过期时间或者设置过期时间有效期内，则查询成功
+    public func codable<T: Decodable>(for key: String, type: T.Type) -> T? {
+        guard let data = data(for: key), let obj = try? JSONDecoder().decode(T.self, from: data) else {
             return nil
         }
-        return img
+        return obj
     }
-    #else
-    public func save(_ image: NSImage, for key: String, expires: Date? = nil) -> Bool {
-        guard let data = image.tiffRepresentation else { return false }
-        return save(data, for: key, expires: expires)
-    }
-    
-    public func image(for key: String) -> NSImage? {
-        guard let data = data(for: key), let img = NSImage(data: data) else {
-            return nil
-        }
-        return img
-    }
-    #endif
 }

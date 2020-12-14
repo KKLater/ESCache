@@ -82,10 +82,95 @@ final class ESFileDocumentTests: XCTestCase {
         }
         let key = "obj"
         let obj = Obj()
+        FileCache.document.removeObject(for: key)
         let success = FileCache.document.save(obj, for: key)
         XCTAssertEqual(success, true, "对象保存失败")
-        if let o = FileCache.document.object(for: key) as? Obj {
+        let o = FileCache.document.object(for: key)
+        print(o)
+    }
+    
+    func testCodableObjectCache() {
+        @objc class ObjCodable: NSObject, Codable {
+            static var supportsSecureCoding: Bool = true
+                        
+            var name: String? = "name"
+            var age = 17
+            
+            override init() {
+                
+            }
+            
+            override func isEqual(_ object: Any?) -> Bool {
+                guard let o = object as? ObjCodable else {
+                    return false
+                }
+                
+                if self.age != o.age {
+                    return false
+                }
+                if o.name == nil && self.name == nil {
+                    return true
+                }
+                
+                if o.name != nil && self.name != nil && o.name == self.name {
+                    return true
+                }
+                
+                return false
+            }
+        }
+        let key = "obj"
+        let obj = ObjCodable()
+
+        let success = FileCache.document.save(obj, for: key)
+        XCTAssertEqual(success, true, "对象保存失败")
+        if let o = FileCache.document.codable(for: key, type: ObjCodable.self) {
             XCTAssertEqual(o, obj, "对象取出失败")
+        }
+    }
+    
+    func testCodableObjectsCache() {
+        @objc class ObjCodable: NSObject, Codable {
+            static var supportsSecureCoding: Bool = true
+                        
+            var name: String? = "name"
+            var age: Int = 17
+            
+            init(name: String? = "name", age: Int = 17) {
+                super.init()
+                self.name = name
+                self.age = age
+            }
+            
+            override func isEqual(_ object: Any?) -> Bool {
+                guard let o = object as? ObjCodable else {
+                    return false
+                }
+                
+                if self.age != o.age {
+                    return false
+                }
+                if o.name == nil && self.name == nil {
+                    return true
+                }
+                
+                if o.name != nil && self.name != nil && o.name == self.name {
+                    return true
+                }
+                
+                return false
+            }
+        }
+        let key = "obj"
+        let obj1 = ObjCodable(age: 1)
+        let obj2 = ObjCodable(age: 2)
+        let objs = [obj1, obj2]
+        
+
+        let success = FileCache.document.save(objs, for: key)
+        XCTAssertEqual(success, true, "对象保存失败")
+        if let os = FileCache.document.codable(for: key, type: [ObjCodable].self) {
+            XCTAssertEqual(os, objs, "对象取出失败")
         }
     }
     
@@ -135,6 +220,7 @@ final class ESFileDocumentTests: XCTestCase {
     static var allTests = [
         ("字符串存取测试", testStringCache),
         ("对象存取测试", testObjectCache),
+        ("对象存取测试", testCodableObjectCache),
         ("是否有缓存数据校验测试", testExisit),
         ("存储未过期测试", testInExpiresCache),
         ("存储过期测试", testOutExpiresCache),
