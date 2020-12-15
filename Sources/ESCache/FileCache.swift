@@ -29,6 +29,7 @@ import UIKit
 #else
 import Foundation
 #endif
+import CommonCrypto
 
 public class FileCache {
 
