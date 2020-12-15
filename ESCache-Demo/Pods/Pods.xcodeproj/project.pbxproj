@@ -7,238 +7,235 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0007A4A45F1DDE1DBBA8CBC6A4608CEE /* CacheModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8779C477886E90B1182BD31E9CAA70E /* CacheModel.swift */; };
-		03CAA5F7A7E50EF568E983FB1D0CB4D6 /* MemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C11ACCDC3FBA4BB9DCF0E2C51A73EEA /* MemoryCache.swift */; };
-		054476AB0ED997D3909C7B371232D77A /* ESCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 6032DF3EA440C6C9C7E2547A2EEA65F0 /* ESCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0724A6E0F6CEB64582E2F4B465DDADA2 /* FileCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72511FD99B1CC7C4BD6A4F8EC15D72A9 /* FileCache.swift */; };
-		080C73311D39581FCE09370F7ED9A7BB /* ESCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 6032DF3EA440C6C9C7E2547A2EEA65F0 /* ESCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0D43BFE943FA1E8832E13980048E556E /* AutoPurgeCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F0B2C882A9558C031E729ECDAECC3 /* AutoPurgeCache.swift */; };
-		172924267A081FAC75F231DC07589193 /* ESCache-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B46EB900766F11DF4A99613C8EF9C /* ESCache-macOS-dummy.m */; };
-		17CBE54847CEE0AAB68595228CC337E6 /* Cacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDCD70F1ED270571F803A8330109332 /* Cacheable.swift */; };
+		056AE6985333963BECAB6323DC6B8600 /* CacheModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EB1FB5B9991517E0C34DBC9D69E734 /* CacheModel.swift */; };
+		0873A564D877B20B58390F698CD1B93B /* FileCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D01C080FF64017AFF9A34E689CB3672 /* FileCache.swift */; };
+		0C0CA6851A4958721C0E08AE53E1585F /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335BF102ADAC9C928A1CD7FB765A0331 /* MD5.swift */; };
+		0C93FAB5884D85AD98083A95F3557DD4 /* ESCache-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F802578E7D6B24358CDC9FAA16DAA690 /* ESCache-tvOS-dummy.m */; };
+		0CD2C5E81283C79B4888804C8D637B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215EF51E666DBD1701D905B63B89B554 /* Foundation.framework */; };
+		11E01A548F886EEF01A0CB54E6564242 /* ESCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9F1D1250131F0F6EB2FB023D608664 /* ESCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12285E104417DDF03ECF0E6091B29CC5 /* CacheModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EB1FB5B9991517E0C34DBC9D69E734 /* CacheModel.swift */; };
+		12871F863AEE31047553E084ED77956C /* ESCache-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B645648C05BDA2540BBB28B2AD2831E0 /* ESCache-macOS-dummy.m */; };
+		16EFBEADDEA3D7F81344DAA5F373600F /* Cacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82ACAFE492C18E58F0715F11B224B6E /* Cacheable.swift */; };
+		1F37883E712D98B812EB69AE7064530D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E1B4BA7C929307A0998E4DB5C1813B /* Foundation.framework */; };
 		25AFEB9A0B93223700B865C6EFC3CD8B /* Pods-ESCache-Demo-tvos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CB47EC5B2F6E82154AD3F09BA0A7C81 /* Pods-ESCache-Demo-tvos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A8CB678B39E09C8A9EA2AC56C5F284C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32ACB1ABBCF103037047D514ED33AC13 /* Foundation.framework */; };
+		2EE29D2D1F5237012E23290EFC4F29B6 /* ESCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9F1D1250131F0F6EB2FB023D608664 /* ESCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3085C8AF8E3D878A686B0E37D99825FE /* Pods-ESCache-Demo-watchos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AB41A7AEE37FA6AB97B68EFC1028A72 /* Pods-ESCache-Demo-watchos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		329D5D75405D648682D1394CB1683782 /* FileCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72511FD99B1CC7C4BD6A4F8EC15D72A9 /* FileCache.swift */; };
-		35E2F48742989A53D654992755D7C5C6 /* CacheModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8779C477886E90B1182BD31E9CAA70E /* CacheModel.swift */; };
+		35EF42D24561779E20F4DB7FAE3E0062 /* MemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D552E358325452BBECA648EA1C43BF5 /* MemoryCache.swift */; };
+		3BD64B3A6ADBF3403406424E26F58517 /* ESCache-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ED9BA99EDC8A4BF7117AD6D286BF74D /* ESCache-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D8C29576E413FEA1BB72443C735B5A1 /* Pods-ESCache-Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E699CC23969F21E67752761C3801852 /* Pods-ESCache-Demo-dummy.m */; };
-		42AB8E71090DE35E7C171256AD338595 /* MemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C11ACCDC3FBA4BB9DCF0E2C51A73EEA /* MemoryCache.swift */; };
-		4E4F01E2C60F98786950287A8B9C5110 /* ESCache-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 736C84C39683FAE30B6659351F893E6D /* ESCache-iOS-dummy.m */; };
-		54C5D947F9B8BC0DA8C06EF6BD7798C2 /* ESCache-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 340B24A7879F6835722795A3B66D03F2 /* ESCache-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		64DFF4EAB8CC6A294219CC5C8B3F4D12 /* ESCache-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8759E959E3E54E0CE4E7C5C5689527A /* ESCache-watchOS-dummy.m */; };
-		6DAC23A4C4A6DCC8EEAEF02B6352F224 /* CacheModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8779C477886E90B1182BD31E9CAA70E /* CacheModel.swift */; };
-		72AC06670A4C7DD99CCC61C07E06F684 /* MemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C11ACCDC3FBA4BB9DCF0E2C51A73EEA /* MemoryCache.swift */; };
+		3DD212CF7EB41DE32F6E13EA7C69C4F4 /* MemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D552E358325452BBECA648EA1C43BF5 /* MemoryCache.swift */; };
+		4847C12D6078EB74A0880E55579B3FB1 /* CacheModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EB1FB5B9991517E0C34DBC9D69E734 /* CacheModel.swift */; };
+		4970E481531CF7825693F0656F76C1AF /* ESCache-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2507CD89028EBF049E7585E38ACE4E69 /* ESCache-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		589D721B5BB7074C32D62150355CBFD5 /* ESCache-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 872C6E1F9BC1169A45461FB1D6E5E41A /* ESCache-iOS-dummy.m */; };
+		593FA08CBC291CD422EABA2E2AF33C64 /* Cacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82ACAFE492C18E58F0715F11B224B6E /* Cacheable.swift */; };
+		5C6B54D43734323FB004E1270B5689DF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6525C631577BA65AD49507D5BB6CCA8F /* Cocoa.framework */; };
+		5F5530D39F198060302044AD178C0584 /* MemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D552E358325452BBECA648EA1C43BF5 /* MemoryCache.swift */; };
+		69816D31D2731012757BA5C46B148949 /* FileCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D01C080FF64017AFF9A34E689CB3672 /* FileCache.swift */; };
 		73E392CA494DE5955F1DDA0188CEF623 /* Pods-ESCache-Demo-tvos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4E335F9E9D4D059D658A72A6D01B70 /* Pods-ESCache-Demo-tvos-dummy.m */; };
-		75CF83F3B10E7606CE33B86733691281 /* ESCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 6032DF3EA440C6C9C7E2547A2EEA65F0 /* ESCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		75E1F316B2B5CE3A052393511D33767D /* Cacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDCD70F1ED270571F803A8330109332 /* Cacheable.swift */; };
+		7A5F095DA8B215C58C39F74331A8C4E9 /* ESCache-tvOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7687E240FB78FCDC1B79EADB3F454268 /* ESCache-tvOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7DCA05C70E225B08CB9B90A47E713772 /* Pods-ESCache-Demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B05472B1A08CBE713EF2E27CBAC279C /* Pods-ESCache-Demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7FB42C4255005A76F471E940C77FD840 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32ACB1ABBCF103037047D514ED33AC13 /* Foundation.framework */; };
-		7FD67BE81501388F5BF5C877FBD0D0FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215EF51E666DBD1701D905B63B89B554 /* Foundation.framework */; };
-		81C50F197BAF38C1A58DAEF42D407DE4 /* ESCache-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9F3EAD6DEA987849B6A3D368F59326A /* ESCache-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8272ED669B0FF0ECD9FBFBA2E1683CBB /* MemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D552E358325452BBECA648EA1C43BF5 /* MemoryCache.swift */; };
+		84F520E457219CE593EAB757062C63EA /* CacheModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EB1FB5B9991517E0C34DBC9D69E734 /* CacheModel.swift */; };
 		9421C4B39A1025B1A7D4BB2570C943D5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6525C631577BA65AD49507D5BB6CCA8F /* Cocoa.framework */; };
-		9C663062C03F10CB2BD4EAB73E21D245 /* MemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C11ACCDC3FBA4BB9DCF0E2C51A73EEA /* MemoryCache.swift */; };
-		A448A557E71957F261A6FDF924831D70 /* AutoPurgeCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F0B2C882A9558C031E729ECDAECC3 /* AutoPurgeCache.swift */; };
+		9B06AE9409468B753099B9E2F1A6D4C3 /* Cacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82ACAFE492C18E58F0715F11B224B6E /* Cacheable.swift */; };
+		9F23E0712BEFF0A7706C4140C6EC534B /* AutoPurgeCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30799A95127E22186E2DF8FA5F241FB /* AutoPurgeCache.swift */; };
+		A4BA0D9FADB4282FD2080D723581CB62 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335BF102ADAC9C928A1CD7FB765A0331 /* MD5.swift */; };
 		A59CD4DB737E0DA112A47C78A713BDE9 /* Pods-ESCache-Demo-macos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1399F40ADD111E885E7AEB85A144066E /* Pods-ESCache-Demo-macos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC29C1DF9A30B9F65FF469F7087B9BCB /* FileCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72511FD99B1CC7C4BD6A4F8EC15D72A9 /* FileCache.swift */; };
-		B67E267BEE5C37C2F0ABD42D6123792A /* CacheModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8779C477886E90B1182BD31E9CAA70E /* CacheModel.swift */; };
+		A6F33E9E0F4F6E0F3DB40D336F58E816 /* FileCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D01C080FF64017AFF9A34E689CB3672 /* FileCache.swift */; };
+		A753E8B2298D35C97E5EA73F68ECE8B8 /* ESCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9F1D1250131F0F6EB2FB023D608664 /* ESCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8D8201965090573A5447DBCFA86B48E /* FileCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D01C080FF64017AFF9A34E689CB3672 /* FileCache.swift */; };
+		AADBD82FE82018238547C23A121D3BC0 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335BF102ADAC9C928A1CD7FB765A0331 /* MD5.swift */; };
+		ABFD54CFC5FE2DFF7DF417EE8FA44810 /* Cacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82ACAFE492C18E58F0715F11B224B6E /* Cacheable.swift */; };
+		ACDD5821F1C36AC37346812C30715907 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335BF102ADAC9C928A1CD7FB765A0331 /* MD5.swift */; };
+		AE4C53C61EA735F8B81313232B043464 /* ESCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9F1D1250131F0F6EB2FB023D608664 /* ESCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B72F8370BE70CC328C44C81705ED2266 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E1B4BA7C929307A0998E4DB5C1813B /* Foundation.framework */; };
-		C07B504A80D048140CC42A2A8CE47D11 /* ESCache-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9B0BCBC07587D2E9CE1FE6B9E2BBED6 /* ESCache-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAA0BE0DBF176E909E2CE0CDA4009043 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32ACB1ABBCF103037047D514ED33AC13 /* Foundation.framework */; };
+		C1973C151D93EF60F7EBEE95BCCFCC86 /* ESCache-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EDC6CCFC51539AA003666F71E8CBD9D /* ESCache-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C33D84B3BDF0AEE608C95C3D1831F3BA /* Pods-ESCache-Demo-watchos WatchKit App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6574E1023E37C774658659CA9FE2F067 /* Pods-ESCache-Demo-watchos WatchKit App-dummy.m */; };
 		C96E89CABC485BD5E83649BCFA473A76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32ACB1ABBCF103037047D514ED33AC13 /* Foundation.framework */; };
-		CAD8954991D67CA4B50AE285B2DE0953 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32ACB1ABBCF103037047D514ED33AC13 /* Foundation.framework */; };
+		CAEF00641772267B1415202921846955 /* AutoPurgeCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30799A95127E22186E2DF8FA5F241FB /* AutoPurgeCache.swift */; };
 		D51FFFA6D6089A14E35A7BD7BD90B0B6 /* Pods-ESCache-Demo-watchos WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6CFD5940EC808BB095D7B2A9560B1C /* Pods-ESCache-Demo-watchos WatchKit Extension-dummy.m */; };
-		D888552D4BEC169ADE005B606E5A302F /* Cacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDCD70F1ED270571F803A8330109332 /* Cacheable.swift */; };
 		D9F380C2F7A2C96B424CA24703268CA8 /* Pods-ESCache-Demo-watchos WatchKit App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F9B4D0437F96B2E0BD8A025BED9F6AA /* Pods-ESCache-Demo-watchos WatchKit App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DAE384569C8E65E0549F74D35B14FDF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E1B4BA7C929307A0998E4DB5C1813B /* Foundation.framework */; };
-		DC122F258E3BE41C19FE7E29BB5E6416 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6525C631577BA65AD49507D5BB6CCA8F /* Cocoa.framework */; };
-		E915B2616912BACDCF68B024C708485A /* ESCache-tvOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 987EB6C19389A5A39CD27FD751874702 /* ESCache-tvOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC03E0327B6ECBCBEAD61D5EE56B3D63 /* Cacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDCD70F1ED270571F803A8330109332 /* Cacheable.swift */; };
-		ED56AE5CD2BBD935524DCC981593F972 /* ESCache-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 134781F013843B65BCFE6C3A33F26AE2 /* ESCache-tvOS-dummy.m */; };
+		E155E8C13CA6EAB011268D8DAF022982 /* ESCache-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3BFC9A193F7E78194B36E70C9D3BDB4 /* ESCache-watchOS-dummy.m */; };
+		E30F5EE916CDBD3D84FB64B5084502B4 /* AutoPurgeCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30799A95127E22186E2DF8FA5F241FB /* AutoPurgeCache.swift */; };
 		ED7F204E4987019F496352CE6AEC87E2 /* Pods-ESCache-Demo-watchos WatchKit Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9439E6E6668BB29D028C0447C093F7F9 /* Pods-ESCache-Demo-watchos WatchKit Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDB51AC4C7C2FC3C756E84A8D629FB9A /* AutoPurgeCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30799A95127E22186E2DF8FA5F241FB /* AutoPurgeCache.swift */; };
 		EE71EF1423135EB9999F7A304FC8899C /* Pods-ESCache-Demo-watchos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 520E35C9B805033DF3B9F16A3AE97DF3 /* Pods-ESCache-Demo-watchos-dummy.m */; };
-		EE7E058C842DF08E6A52E53C6F7B44DE /* AutoPurgeCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F0B2C882A9558C031E729ECDAECC3 /* AutoPurgeCache.swift */; };
-		EF36E5B73617217698888B6B73906491 /* FileCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72511FD99B1CC7C4BD6A4F8EC15D72A9 /* FileCache.swift */; };
-		F0AF38C44ABF89A46F7FA7498489264E /* ESCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 6032DF3EA440C6C9C7E2547A2EEA65F0 /* ESCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F59447302BDE8F82003325DCED5D1403 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215EF51E666DBD1701D905B63B89B554 /* Foundation.framework */; };
 		F61B0C89F65B513F6DDA1510ECBF453E /* Pods-ESCache-Demo-macos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABAB671DE903C72213576C5F2EA8057 /* Pods-ESCache-Demo-macos-dummy.m */; };
-		FFD7BE0E82BCA04BCA594A61C3F9F2B9 /* AutoPurgeCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F0B2C882A9558C031E729ECDAECC3 /* AutoPurgeCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		13A0329A7FC3AC512459A22E6F225B3B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ECEC3FFDF7C0A96EEC7668CE284BC3CD;
-			remoteInfo = "ESCache-watchOS";
-		};
-		18B8947098BDD600B99DA598EB572B37 /* PBXContainerItemProxy */ = {
+		29EFDD243F7393302E42CC895D8CDDA5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 10340FDE504ABFFBC21A291C3EF0796F;
 			remoteInfo = "ESCache-tvOS";
 		};
-		6E98BA2A71A4ED127C86E63DCF2F333E /* PBXContainerItemProxy */ = {
+		38411D7E2CFE7B2D9FD1612991BDA4A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECEC3FFDF7C0A96EEC7668CE284BC3CD;
+			remoteInfo = "ESCache-watchOS";
+		};
+		46AABEF04583F71CAC2AA4A5BB12D34B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A278F0A3C1D53C0BC0634328C755D932;
 			remoteInfo = "ESCache-iOS";
 		};
-		A99476885D925A319252106037C9BBAB /* PBXContainerItemProxy */ = {
+		AF3F7C98AB442B09AA1D8A33466D3145 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = ECEC3FFDF7C0A96EEC7668CE284BC3CD;
 			remoteInfo = "ESCache-watchOS";
 		};
-		BE26554197385B9C96C6AFBB99AAF514 /* PBXContainerItemProxy */ = {
+		DD6E2D58831BD5143014902BFBF78C94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECEC3FFDF7C0A96EEC7668CE284BC3CD;
+			remoteInfo = "ESCache-watchOS";
+		};
+		E76E1DC0BEB789C236866ACE20E50EA6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7E89D848EFB2E387E25240B76D929241;
 			remoteInfo = "ESCache-macOS";
 		};
-		F978A8922E2A107D96BC60425086EBFA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ECEC3FFDF7C0A96EEC7668CE284BC3CD;
-			remoteInfo = "ESCache-watchOS";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		01F2FE8D663CE868BDDFB8F0C65A25E1 /* Pods-ESCache-Demo-tvos-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ESCache-Demo-tvos-frameworks.sh"; sourceTree = "<group>"; };
-		01F6BFCB94382DA49894CB5A8E08DBA9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		03714A977051DC9D72469C125885325A /* Pods_ESCache_Demo_watchos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ESCache_Demo_watchos.framework; path = "Pods-ESCache-Demo-watchos.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03AC8A944C011952C1FCB0C13AD83ECE /* ESCache.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ESCache.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0889E21527DEE3E5A421DFE0468E29FA /* ESCache-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "ESCache-tvOS.modulemap"; path = "../ESCache-tvOS/ESCache-tvOS.modulemap"; sourceTree = "<group>"; };
 		0C1CADAF7B09D0490B6000585318C9DE /* Pods-ESCache-Demo-macos-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ESCache-Demo-macos-acknowledgements.plist"; sourceTree = "<group>"; };
-		1153532CF931D1D1EAD7910C1906A10F /* ESCache-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "ESCache-watchOS.debug.xcconfig"; path = "../ESCache-watchOS/ESCache-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
-		134781F013843B65BCFE6C3A33F26AE2 /* ESCache-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ESCache-tvOS-dummy.m"; path = "../ESCache-tvOS/ESCache-tvOS-dummy.m"; sourceTree = "<group>"; };
 		1399F40ADD111E885E7AEB85A144066E /* Pods-ESCache-Demo-macos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ESCache-Demo-macos-umbrella.h"; sourceTree = "<group>"; };
 		1400DF1F800520097CD6CE2047278FFB /* Pods-ESCache-Demo-watchos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ESCache-Demo-watchos.release.xcconfig"; sourceTree = "<group>"; };
-		168A06BDD159ED4A0E7EBD95B2BCACB0 /* ESCache-tvOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "ESCache-tvOS-Info.plist"; path = "../ESCache-tvOS/ESCache-tvOS-Info.plist"; sourceTree = "<group>"; };
 		1A02E9185794F9671E5206B4359A8D9A /* Pods-ESCache-Demo-tvos-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ESCache-Demo-tvos-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1B05472B1A08CBE713EF2E27CBAC279C /* Pods-ESCache-Demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ESCache-Demo-umbrella.h"; sourceTree = "<group>"; };
+		1ED9BA99EDC8A4BF7117AD6D286BF74D /* ESCache-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ESCache-iOS-umbrella.h"; sourceTree = "<group>"; };
 		208F802A2AAD21F0148692786CDA6624 /* Pods-ESCache-Demo-macos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ESCache-Demo-macos.modulemap"; sourceTree = "<group>"; };
 		215EF51E666DBD1701D905B63B89B554 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		250E0EE17BD895EA46726FF74F2A3205 /* ESCache-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "ESCache-tvOS.release.xcconfig"; path = "../ESCache-tvOS/ESCache-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		2507CD89028EBF049E7585E38ACE4E69 /* ESCache-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ESCache-watchOS-umbrella.h"; path = "../ESCache-watchOS/ESCache-watchOS-umbrella.h"; sourceTree = "<group>"; };
 		26950382D96AD5060D5FF34A1E5225D1 /* ESCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ESCache.framework; path = "ESCache-tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		290FFE480FB75D7BBF2C07047171E15C /* Pods-ESCache-Demo-watchos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ESCache-Demo-watchos.debug.xcconfig"; sourceTree = "<group>"; };
-		291952A73681E2D34BD7D2FF39001C40 /* ESCache-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "ESCache-tvOS.debug.xcconfig"; path = "../ESCache-tvOS/ESCache-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		2A196432AE63499BD8E87814AAA91F7F /* Pods-ESCache-Demo-watchos-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ESCache-Demo-watchos-frameworks.sh"; sourceTree = "<group>"; };
+		2AA9AB1EBE639E424D2162D7A4A31C3B /* ESCache-tvOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ESCache-tvOS-prefix.pch"; path = "../ESCache-tvOS/ESCache-tvOS-prefix.pch"; sourceTree = "<group>"; };
 		2C80B9404FBB151CE2AD05106310F954 /* Pods-ESCache-Demo-watchos-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ESCache-Demo-watchos-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2C9F1D1250131F0F6EB2FB023D608664 /* ESCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESCache.h; path = Sources/ESCache.h; sourceTree = "<group>"; };
 		2CB47EC5B2F6E82154AD3F09BA0A7C81 /* Pods-ESCache-Demo-tvos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ESCache-Demo-tvos-umbrella.h"; sourceTree = "<group>"; };
 		2CD755326BA1147113549407A6F12626 /* ESCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ESCache.framework; path = "ESCache-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D01C080FF64017AFF9A34E689CB3672 /* FileCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FileCache.swift; sourceTree = "<group>"; };
 		2E28E30032BF6B0B8A10D069026C0020 /* Pods-ESCache-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ESCache-Demo.release.xcconfig"; sourceTree = "<group>"; };
-		2F0F0B2C882A9558C031E729ECDAECC3 /* AutoPurgeCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AutoPurgeCache.swift; sourceTree = "<group>"; };
-		3027F84D65E298405C7C899712EC792A /* ESCache-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ESCache-iOS-prefix.pch"; sourceTree = "<group>"; };
+		2F1685243FD9815753B59C1291DA1459 /* ESCache-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "ESCache-watchOS.debug.xcconfig"; path = "../ESCache-watchOS/ESCache-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		30AE6146A0F280E95E7ECE314486F015 /* ESCache-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "ESCache-iOS.modulemap"; sourceTree = "<group>"; };
 		32ACB1ABBCF103037047D514ED33AC13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		331DA055959A81BA3137F8173D66DA68 /* Pods-ESCache-Demo-watchos WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ESCache-Demo-watchos WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
+		335BF102ADAC9C928A1CD7FB765A0331 /* MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
+		33BA7E1FA7E62E5488A5D3BECA15886C /* ESCache-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "ESCache-macOS.release.xcconfig"; path = "../ESCache-macOS/ESCache-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		33D9A3576FBC7165420AE43AF2F2BFA1 /* Pods-ESCache-Demo-macos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ESCache-Demo-macos.debug.xcconfig"; sourceTree = "<group>"; };
-		340B24A7879F6835722795A3B66D03F2 /* ESCache-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ESCache-iOS-umbrella.h"; sourceTree = "<group>"; };
-		3BB51BFED7D18E4FDF4720F48AA74781 /* ESCache-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ESCache-iOS-Info.plist"; sourceTree = "<group>"; };
-		3D5646F9FF4C7C58EB38B4E844A613D5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		4356DAD7C89A7C0991DCD13C044B2EA2 /* Pods-ESCache-Demo-watchos WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ESCache-Demo-watchos WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		43B57FC3B3E441D53E14EF75AB1B79C3 /* ESCache-macOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "ESCache-macOS-Info.plist"; path = "../ESCache-macOS/ESCache-macOS-Info.plist"; sourceTree = "<group>"; };
 		464E7B6D7B9F0734E9ABDE7AC23CCC4E /* Pods-ESCache-Demo-watchos-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ESCache-Demo-watchos-Info.plist"; sourceTree = "<group>"; };
 		467BBC37EFE5EEFD03BC08F120CE0465 /* Pods-ESCache-Demo-watchos WatchKit App-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ESCache-Demo-watchos WatchKit App-Info.plist"; sourceTree = "<group>"; };
-		48D4EF7EDE4840D0C7F5314AE38FDD5B /* ESCache-watchOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "ESCache-watchOS-Info.plist"; path = "../ESCache-watchOS/ESCache-watchOS-Info.plist"; sourceTree = "<group>"; };
+		46CB31D5F3FC5E2B7666EDA5978A587F /* ESCache-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "ESCache-watchOS.release.xcconfig"; path = "../ESCache-watchOS/ESCache-watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		46EAB6D038B782E1F7051232A8027857 /* ESCache-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "ESCache-macOS.debug.xcconfig"; path = "../ESCache-macOS/ESCache-macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		4922BDCC18203E09D7F80627FAF7BD28 /* Pods_ESCache_Demo_watchos_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ESCache_Demo_watchos_WatchKit_Extension.framework; path = "Pods-ESCache-Demo-watchos WatchKit Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D5F618A5356EC0592E21FED97EADF3 /* ESCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ESCache.framework; path = "ESCache-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ABAB671DE903C72213576C5F2EA8057 /* Pods-ESCache-Demo-macos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ESCache-Demo-macos-dummy.m"; sourceTree = "<group>"; };
 		4BE3C6D3CE8932EFEA20D8859E6A7CB3 /* Pods-ESCache-Demo-watchos WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ESCache-Demo-watchos WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4C6B46EB900766F11DF4A99613C8EF9C /* ESCache-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ESCache-macOS-dummy.m"; path = "../ESCache-macOS/ESCache-macOS-dummy.m"; sourceTree = "<group>"; };
 		4D08B2786D02B43C91AF3FDBA254B85F /* Pods-ESCache-Demo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ESCache-Demo-Info.plist"; sourceTree = "<group>"; };
 		4FDE2676342514ADF5FB57A81CAA2AF9 /* Pods-ESCache-Demo-macos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ESCache-Demo-macos.release.xcconfig"; sourceTree = "<group>"; };
+		514369E141E1B25F29556243790ECD7D /* ESCache-watchOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "ESCache-watchOS-Info.plist"; path = "../ESCache-watchOS/ESCache-watchOS-Info.plist"; sourceTree = "<group>"; };
 		520E35C9B805033DF3B9F16A3AE97DF3 /* Pods-ESCache-Demo-watchos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ESCache-Demo-watchos-dummy.m"; sourceTree = "<group>"; };
+		56368D2FA3400A7E33FD41AEBC16BD00 /* ESCache-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "ESCache-macOS.modulemap"; path = "../ESCache-macOS/ESCache-macOS.modulemap"; sourceTree = "<group>"; };
 		5920165B208928BBC711A84B57440979 /* Pods-ESCache-Demo-tvos-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ESCache-Demo-tvos-acknowledgements.plist"; sourceTree = "<group>"; };
-		6032DF3EA440C6C9C7E2547A2EEA65F0 /* ESCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESCache.h; path = Sources/ESCache.h; sourceTree = "<group>"; };
+		5B27AB7BCC3909165422619F41DB1C68 /* ESCache-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ESCache-iOS-Info.plist"; sourceTree = "<group>"; };
+		5E30ACEA41940D518E45E05AB972335B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		5F58E301B9927BD45B684A9F7EDF45BA /* ESCache-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "ESCache-watchOS.modulemap"; path = "../ESCache-watchOS/ESCache-watchOS.modulemap"; sourceTree = "<group>"; };
 		6054E93320308033F33AA7685A97BF6E /* Pods_ESCache_Demo_macos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ESCache_Demo_macos.framework; path = "Pods-ESCache-Demo-macos.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6525C631577BA65AD49507D5BB6CCA8F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		6574E1023E37C774658659CA9FE2F067 /* Pods-ESCache-Demo-watchos WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ESCache-Demo-watchos WatchKit App-dummy.m"; sourceTree = "<group>"; };
-		6C11ACCDC3FBA4BB9DCF0E2C51A73EEA /* MemoryCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MemoryCache.swift; sourceTree = "<group>"; };
+		6EDC6CCFC51539AA003666F71E8CBD9D /* ESCache-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ESCache-macOS-umbrella.h"; path = "../ESCache-macOS/ESCache-macOS-umbrella.h"; sourceTree = "<group>"; };
 		71742A7CE1072ED9A9260023FA1BD491 /* Pods_ESCache_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ESCache_Demo.framework; path = "Pods-ESCache-Demo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		72511FD99B1CC7C4BD6A4F8EC15D72A9 /* FileCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FileCache.swift; sourceTree = "<group>"; };
-		736C84C39683FAE30B6659351F893E6D /* ESCache-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ESCache-iOS-dummy.m"; sourceTree = "<group>"; };
 		741D25799F33D4FFEACBC05A5F79A194 /* Pods-ESCache-Demo-watchos WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ESCache-Demo-watchos WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
-		7793B93C485FFDBFDFBFD2D852D38DD2 /* ESCache-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "ESCache-watchOS.modulemap"; path = "../ESCache-watchOS/ESCache-watchOS.modulemap"; sourceTree = "<group>"; };
+		7469669A3DE104D8BF96754CB12DFE6A /* ESCache-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ESCache-iOS-prefix.pch"; sourceTree = "<group>"; };
+		7687E240FB78FCDC1B79EADB3F454268 /* ESCache-tvOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ESCache-tvOS-umbrella.h"; path = "../ESCache-tvOS/ESCache-tvOS-umbrella.h"; sourceTree = "<group>"; };
 		77F282F19AD108ABE812D29020DCFB33 /* Pods-ESCache-Demo-watchos WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ESCache-Demo-watchos WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
-		79196FEC0AE908A61B1D6AE46D844D81 /* ESCache-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "ESCache-macOS.modulemap"; path = "../ESCache-macOS/ESCache-macOS.modulemap"; sourceTree = "<group>"; };
 		7B7476C6EC628F85D942D594DE3C2FEF /* Pods-ESCache-Demo-macos-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ESCache-Demo-macos-Info.plist"; sourceTree = "<group>"; };
+		7D552E358325452BBECA648EA1C43BF5 /* MemoryCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MemoryCache.swift; sourceTree = "<group>"; };
 		7E699CC23969F21E67752761C3801852 /* Pods-ESCache-Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ESCache-Demo-dummy.m"; sourceTree = "<group>"; };
-		82B75A6D97AAAE7FD6A87519D66A9746 /* ESCache-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "ESCache-macOS.release.xcconfig"; path = "../ESCache-macOS/ESCache-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		8615B904E8568DC8F464BEB83B4F6AA9 /* Pods-ESCache-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ESCache-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		865CFE8416E19590696DD2CA7BC0104A /* ESCache-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "ESCache-tvOS.debug.xcconfig"; path = "../ESCache-tvOS/ESCache-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		86C29CC025BD5B83D4B34FA893C1EAA3 /* Pods-ESCache-Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ESCache-Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		872C6E1F9BC1169A45461FB1D6E5E41A /* ESCache-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ESCache-iOS-dummy.m"; sourceTree = "<group>"; };
 		8780E3E166F3FE5510BC16D12C7FCEF1 /* Pods-ESCache-Demo-tvos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ESCache-Demo-tvos.modulemap"; sourceTree = "<group>"; };
-		88396F1B254E25E66FBF107149F007E6 /* ESCache-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "ESCache-macOS.debug.xcconfig"; path = "../ESCache-macOS/ESCache-macOS.debug.xcconfig"; sourceTree = "<group>"; };
-		8AB0645DCC85C1084E3C5365E2310AB4 /* ESCache.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ESCache.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		91635D65A8BE7B8E83EC2015DA62FD1C /* ESCache-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "ESCache-iOS.modulemap"; sourceTree = "<group>"; };
 		93FCB7E8CECD51EE0428934ECBDB7085 /* Pods-ESCache-Demo-watchos WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ESCache-Demo-watchos WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 		9439E6E6668BB29D028C0447C093F7F9 /* Pods-ESCache-Demo-watchos WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ESCache-Demo-watchos WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
-		987EB6C19389A5A39CD27FD751874702 /* ESCache-tvOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ESCache-tvOS-umbrella.h"; path = "../ESCache-tvOS/ESCache-tvOS-umbrella.h"; sourceTree = "<group>"; };
 		99D81F16E48DF566491CC4A1BE067709 /* Pods-ESCache-Demo-watchos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ESCache-Demo-watchos.modulemap"; sourceTree = "<group>"; };
 		9AB41A7AEE37FA6AB97B68EFC1028A72 /* Pods-ESCache-Demo-watchos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ESCache-Demo-watchos-umbrella.h"; sourceTree = "<group>"; };
 		9AE00676CE6CF78521B138C9A6B4B8CE /* Pods-ESCache-Demo-watchos WatchKit App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ESCache-Demo-watchos WatchKit App.modulemap"; sourceTree = "<group>"; };
 		9BAB08C7232D79BA4543459D6EB9D20A /* Pods-ESCache-Demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ESCache-Demo-acknowledgements.plist"; sourceTree = "<group>"; };
-		9D03793A14CBF88ADFF696CDE4FA0AA1 /* ESCache-macOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "ESCache-macOS-Info.plist"; path = "../ESCache-macOS/ESCache-macOS-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DEEF4A93897A58C4CC9A1B254078BB5 /* Pods-ESCache-Demo-watchos WatchKit Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ESCache-Demo-watchos WatchKit Extension-frameworks.sh"; sourceTree = "<group>"; };
 		9F9B4D0437F96B2E0BD8A025BED9F6AA /* Pods-ESCache-Demo-watchos WatchKit App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ESCache-Demo-watchos WatchKit App-umbrella.h"; sourceTree = "<group>"; };
 		A5DE9B34F29D06FC69A3E245FEE6DAB1 /* Pods-ESCache-Demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ESCache-Demo-frameworks.sh"; sourceTree = "<group>"; };
 		A923EC35A8584179F2EC414C80E6A199 /* Pods-ESCache-Demo-watchos WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ESCache-Demo-watchos WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
-		AD0738245BFBF680F047C8F770C1F554 /* ESCache-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ESCache-watchOS-prefix.pch"; path = "../ESCache-watchOS/ESCache-watchOS-prefix.pch"; sourceTree = "<group>"; };
+		AD2CF841ED7AF964D552806959213BB4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		AE4FB414374C7C48D55FA645A5634B88 /* Pods-ESCache-Demo-macos-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ESCache-Demo-macos-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AE99AA761E5CB0F6982CEBF0617875E6 /* ESCache-tvOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ESCache-tvOS-prefix.pch"; path = "../ESCache-tvOS/ESCache-tvOS-prefix.pch"; sourceTree = "<group>"; };
 		AFDF36237D23D81A3DA1B3806C415581 /* Pods-ESCache-Demo-tvos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ESCache-Demo-tvos.release.xcconfig"; sourceTree = "<group>"; };
+		B6313367AF88B147A677048F64BBFAFF /* ESCache-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "ESCache-tvOS.release.xcconfig"; path = "../ESCache-tvOS/ESCache-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		B645648C05BDA2540BBB28B2AD2831E0 /* ESCache-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ESCache-macOS-dummy.m"; path = "../ESCache-macOS/ESCache-macOS-dummy.m"; sourceTree = "<group>"; };
 		B7E1B4BA7C929307A0998E4DB5C1813B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		C46F4FBF10BE78537F385409B2575B0C /* Pods_ESCache_Demo_tvos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ESCache_Demo_tvos.framework; path = "Pods-ESCache-Demo-tvos.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C559484B95BD6FB3A8DA770828BD86E7 /* ESCache-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ESCache-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		CD18372F0313596BDBBEEA8E7C07CCDB /* Pods-ESCache-Demo-watchos WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ESCache-Demo-watchos WatchKit Extension.modulemap"; sourceTree = "<group>"; };
-		D0505E3E488DA7832AB7E50BAD0AA2B4 /* ESCache-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ESCache-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		CE018F879148B82F3500884832D4716C /* ESCache-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ESCache-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D2B320E272F85659CFE2E30536046793 /* Pods-ESCache-Demo-watchos WatchKit App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ESCache-Demo-watchos WatchKit App-frameworks.sh"; sourceTree = "<group>"; };
 		D6180FCFC1924332B13E64C561A19E8F /* Pods-ESCache-Demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ESCache-Demo.modulemap"; sourceTree = "<group>"; };
-		D751F646C0418595DFC6C2F0463D9AF5 /* ESCache-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ESCache-macOS-prefix.pch"; path = "../ESCache-macOS/ESCache-macOS-prefix.pch"; sourceTree = "<group>"; };
-		D8759E959E3E54E0CE4E7C5C5689527A /* ESCache-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ESCache-watchOS-dummy.m"; path = "../ESCache-watchOS/ESCache-watchOS-dummy.m"; sourceTree = "<group>"; };
 		DAC5A46AA7E0FA9D1D33D5D310EF9315 /* Pods-ESCache-Demo-watchos WatchKit Extension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ESCache-Demo-watchos WatchKit Extension-Info.plist"; sourceTree = "<group>"; };
 		DB3E84ACC505293E51440EE6438F8495 /* Pods-ESCache-Demo-watchos-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ESCache-Demo-watchos-acknowledgements.plist"; sourceTree = "<group>"; };
 		DC4E335F9E9D4D059D658A72A6D01B70 /* Pods-ESCache-Demo-tvos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ESCache-Demo-tvos-dummy.m"; sourceTree = "<group>"; };
-		E41C71A4129EC747D50E1FAEBF11DC50 /* ESCache-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "ESCache-watchOS.release.xcconfig"; path = "../ESCache-watchOS/ESCache-watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		E64898A35E983539D776F7AC8B8EC818 /* ESCache-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ESCache-watchOS-prefix.pch"; path = "../ESCache-watchOS/ESCache-watchOS-prefix.pch"; sourceTree = "<group>"; };
 		E64BC71A4A21EA14FD0CB8FD60FDCD49 /* Pods-ESCache-Demo-tvos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ESCache-Demo-tvos.debug.xcconfig"; sourceTree = "<group>"; };
+		E9553DFEEBA5FCDE6C3340F7DEC8F4DB /* ESCache-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ESCache-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		EDBE44E76891D188D2CC5FDDF19885BA /* Pods_ESCache_Demo_watchos_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ESCache_Demo_watchos_WatchKit_App.framework; path = "Pods-ESCache-Demo-watchos WatchKit App.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF9DE3C53A9D13A64CDF268F6E29075A /* ESCache-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ESCache-macOS-prefix.pch"; path = "../ESCache-macOS/ESCache-macOS-prefix.pch"; sourceTree = "<group>"; };
+		F30799A95127E22186E2DF8FA5F241FB /* AutoPurgeCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AutoPurgeCache.swift; sourceTree = "<group>"; };
+		F3BFC9A193F7E78194B36E70C9D3BDB4 /* ESCache-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ESCache-watchOS-dummy.m"; path = "../ESCache-watchOS/ESCache-watchOS-dummy.m"; sourceTree = "<group>"; };
+		F3EB1FB5B9991517E0C34DBC9D69E734 /* CacheModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CacheModel.swift; sourceTree = "<group>"; };
 		F51BF67DF17355094392F25C9179CB7E /* Pods-ESCache-Demo-macos-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ESCache-Demo-macos-frameworks.sh"; sourceTree = "<group>"; };
 		F7E8BC0A51B6D3343D5981CAFC7C60CF /* Pods-ESCache-Demo-tvos-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ESCache-Demo-tvos-Info.plist"; sourceTree = "<group>"; };
-		F8779C477886E90B1182BD31E9CAA70E /* CacheModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CacheModel.swift; sourceTree = "<group>"; };
+		F802578E7D6B24358CDC9FAA16DAA690 /* ESCache-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ESCache-tvOS-dummy.m"; path = "../ESCache-tvOS/ESCache-tvOS-dummy.m"; sourceTree = "<group>"; };
+		F82ACAFE492C18E58F0715F11B224B6E /* Cacheable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Cacheable.swift; sourceTree = "<group>"; };
 		F8BC3509F4E79C28C9AA298D1DDF762D /* ESCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ESCache.framework; path = "ESCache-watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9B0BCBC07587D2E9CE1FE6B9E2BBED6 /* ESCache-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ESCache-macOS-umbrella.h"; path = "../ESCache-macOS/ESCache-macOS-umbrella.h"; sourceTree = "<group>"; };
-		F9F3EAD6DEA987849B6A3D368F59326A /* ESCache-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ESCache-watchOS-umbrella.h"; path = "../ESCache-watchOS/ESCache-watchOS-umbrella.h"; sourceTree = "<group>"; };
-		FABED057B88BA536BD2A2F6D43B65344 /* ESCache-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "ESCache-tvOS.modulemap"; path = "../ESCache-tvOS/ESCache-tvOS.modulemap"; sourceTree = "<group>"; };
 		FB542FB79C4C0F480D722FF550451F87 /* Pods-ESCache-Demo-watchos WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ESCache-Demo-watchos WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 		FC6CFD5940EC808BB095D7B2A9560B1C /* Pods-ESCache-Demo-watchos WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ESCache-Demo-watchos WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
-		FEDCD70F1ED270571F803A8330109332 /* Cacheable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Cacheable.swift; sourceTree = "<group>"; };
+		FCC9CB649E3EA8488C17043D6B50EFFB /* ESCache-tvOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "ESCache-tvOS-Info.plist"; path = "../ESCache-tvOS/ESCache-tvOS-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2D0110372A0E79A9BFA06BD5EB5B8DE3 /* Frameworks */ = {
+		4187EBAF335AF78BE7019274E8BD3247 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FD67BE81501388F5BF5C877FBD0D0FD /* Foundation.framework in Frameworks */,
+				1F37883E712D98B812EB69AE7064530D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DA5AF90BF2B203CEA088AFE64778AD6 /* Frameworks */ = {
+		59C897C947E5D4303D4E25621F4E5EAB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAE384569C8E65E0549F74D35B14FDF6 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5F0299E966BB2A906EBFEC2940C265A5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC122F258E3BE41C19FE7E29BB5E6416 /* Cocoa.framework in Frameworks */,
+				5C6B54D43734323FB004E1270B5689DF /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +255,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9F3E6BF7DA117BC39CFA017607491460 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CD2C5E81283C79B4888804C8D637B5E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A82DC87857B845D304066928B715FB34 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -274,19 +279,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD0BBDF6D63643D9836C1CC82A626D49 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CAD8954991D67CA4B50AE285B2DE0953 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E904034DB93E6CE0F9E489F0BA42ECB2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7FB42C4255005A76F471E940C77FD840 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED830C7EE1E647A5FB36DA0E55E330DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA0BE0DBF176E909E2CE0CDA4009043 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,42 +306,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0196B619A45FAD0B8F4917B5F041AF93 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				91635D65A8BE7B8E83EC2015DA62FD1C /* ESCache-iOS.modulemap */,
-				736C84C39683FAE30B6659351F893E6D /* ESCache-iOS-dummy.m */,
-				3BB51BFED7D18E4FDF4720F48AA74781 /* ESCache-iOS-Info.plist */,
-				3027F84D65E298405C7C899712EC792A /* ESCache-iOS-prefix.pch */,
-				340B24A7879F6835722795A3B66D03F2 /* ESCache-iOS-umbrella.h */,
-				C559484B95BD6FB3A8DA770828BD86E7 /* ESCache-iOS.debug.xcconfig */,
-				D0505E3E488DA7832AB7E50BAD0AA2B4 /* ESCache-iOS.release.xcconfig */,
-				79196FEC0AE908A61B1D6AE46D844D81 /* ESCache-macOS.modulemap */,
-				4C6B46EB900766F11DF4A99613C8EF9C /* ESCache-macOS-dummy.m */,
-				9D03793A14CBF88ADFF696CDE4FA0AA1 /* ESCache-macOS-Info.plist */,
-				D751F646C0418595DFC6C2F0463D9AF5 /* ESCache-macOS-prefix.pch */,
-				F9B0BCBC07587D2E9CE1FE6B9E2BBED6 /* ESCache-macOS-umbrella.h */,
-				88396F1B254E25E66FBF107149F007E6 /* ESCache-macOS.debug.xcconfig */,
-				82B75A6D97AAAE7FD6A87519D66A9746 /* ESCache-macOS.release.xcconfig */,
-				FABED057B88BA536BD2A2F6D43B65344 /* ESCache-tvOS.modulemap */,
-				134781F013843B65BCFE6C3A33F26AE2 /* ESCache-tvOS-dummy.m */,
-				168A06BDD159ED4A0E7EBD95B2BCACB0 /* ESCache-tvOS-Info.plist */,
-				AE99AA761E5CB0F6982CEBF0617875E6 /* ESCache-tvOS-prefix.pch */,
-				987EB6C19389A5A39CD27FD751874702 /* ESCache-tvOS-umbrella.h */,
-				291952A73681E2D34BD7D2FF39001C40 /* ESCache-tvOS.debug.xcconfig */,
-				250E0EE17BD895EA46726FF74F2A3205 /* ESCache-tvOS.release.xcconfig */,
-				7793B93C485FFDBFDFBFD2D852D38DD2 /* ESCache-watchOS.modulemap */,
-				D8759E959E3E54E0CE4E7C5C5689527A /* ESCache-watchOS-dummy.m */,
-				48D4EF7EDE4840D0C7F5314AE38FDD5B /* ESCache-watchOS-Info.plist */,
-				AD0738245BFBF680F047C8F770C1F554 /* ESCache-watchOS-prefix.pch */,
-				F9F3EAD6DEA987849B6A3D368F59326A /* ESCache-watchOS-umbrella.h */,
-				1153532CF931D1D1EAD7910C1906A10F /* ESCache-watchOS.debug.xcconfig */,
-				E41C71A4129EC747D50E1FAEBF11DC50 /* ESCache-watchOS.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "ESCache-Demo/Pods/Target Support Files/ESCache-iOS";
-			sourceTree = "<group>";
-		};
 		0F47FB2AD9E067738EF085C392E474D4 /* watchOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -360,19 +329,6 @@
 				4922BDCC18203E09D7F80627FAF7BD28 /* Pods_ESCache_Demo_watchos_WatchKit_Extension.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		33F8DA0ECA115CCD4BB40E04DCBC7844 /* ESCache */ = {
-			isa = PBXGroup;
-			children = (
-				2F0F0B2C882A9558C031E729ECDAECC3 /* AutoPurgeCache.swift */,
-				FEDCD70F1ED270571F803A8330109332 /* Cacheable.swift */,
-				F8779C477886E90B1182BD31E9CAA70E /* CacheModel.swift */,
-				72511FD99B1CC7C4BD6A4F8EC15D72A9 /* FileCache.swift */,
-				6C11ACCDC3FBA4BB9DCF0E2C51A73EEA /* MemoryCache.swift */,
-			);
-			name = ESCache;
-			path = Sources/ESCache;
 			sourceTree = "<group>";
 		};
 		404DC26AC54227F4EC12D896B56EFE3A /* Targets Support Files */ = {
@@ -433,6 +389,16 @@
 			path = "Target Support Files/Pods-ESCache-Demo-tvos";
 			sourceTree = "<group>";
 		};
+		6FECBF7FC2162E1793CECE132483E235 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				03AC8A944C011952C1FCB0C13AD83ECE /* ESCache.podspec */,
+				AD2CF841ED7AF964D552806959213BB4 /* LICENSE */,
+				5E30ACEA41940D518E45E05AB972335B /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		7AB1A90E3A5DCA642C9E5742441FE518 /* Pods-ESCache-Demo-watchos */ = {
 			isa = PBXGroup;
 			children = (
@@ -478,31 +444,59 @@
 		7E955D3F9CC88F93A08AF6590D0993AB /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BBAF19423FA932750B2A859E887424A6 /* ESCache */,
+				D25709D45764233179DE104EBBBA30BB /* ESCache */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		B4B7C54EBFF3E81E91625C151F754AF7 /* Pod */ = {
+		916E2AB94B67D513AB5A058521E0BC2E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				8AB0645DCC85C1084E3C5365E2310AB4 /* ESCache.podspec */,
-				01F6BFCB94382DA49894CB5A8E08DBA9 /* LICENSE */,
-				3D5646F9FF4C7C58EB38B4E844A613D5 /* README.md */,
+				30AE6146A0F280E95E7ECE314486F015 /* ESCache-iOS.modulemap */,
+				872C6E1F9BC1169A45461FB1D6E5E41A /* ESCache-iOS-dummy.m */,
+				5B27AB7BCC3909165422619F41DB1C68 /* ESCache-iOS-Info.plist */,
+				7469669A3DE104D8BF96754CB12DFE6A /* ESCache-iOS-prefix.pch */,
+				1ED9BA99EDC8A4BF7117AD6D286BF74D /* ESCache-iOS-umbrella.h */,
+				CE018F879148B82F3500884832D4716C /* ESCache-iOS.debug.xcconfig */,
+				E9553DFEEBA5FCDE6C3340F7DEC8F4DB /* ESCache-iOS.release.xcconfig */,
+				56368D2FA3400A7E33FD41AEBC16BD00 /* ESCache-macOS.modulemap */,
+				B645648C05BDA2540BBB28B2AD2831E0 /* ESCache-macOS-dummy.m */,
+				43B57FC3B3E441D53E14EF75AB1B79C3 /* ESCache-macOS-Info.plist */,
+				EF9DE3C53A9D13A64CDF268F6E29075A /* ESCache-macOS-prefix.pch */,
+				6EDC6CCFC51539AA003666F71E8CBD9D /* ESCache-macOS-umbrella.h */,
+				46EAB6D038B782E1F7051232A8027857 /* ESCache-macOS.debug.xcconfig */,
+				33BA7E1FA7E62E5488A5D3BECA15886C /* ESCache-macOS.release.xcconfig */,
+				0889E21527DEE3E5A421DFE0468E29FA /* ESCache-tvOS.modulemap */,
+				F802578E7D6B24358CDC9FAA16DAA690 /* ESCache-tvOS-dummy.m */,
+				FCC9CB649E3EA8488C17043D6B50EFFB /* ESCache-tvOS-Info.plist */,
+				2AA9AB1EBE639E424D2162D7A4A31C3B /* ESCache-tvOS-prefix.pch */,
+				7687E240FB78FCDC1B79EADB3F454268 /* ESCache-tvOS-umbrella.h */,
+				865CFE8416E19590696DD2CA7BC0104A /* ESCache-tvOS.debug.xcconfig */,
+				B6313367AF88B147A677048F64BBFAFF /* ESCache-tvOS.release.xcconfig */,
+				5F58E301B9927BD45B684A9F7EDF45BA /* ESCache-watchOS.modulemap */,
+				F3BFC9A193F7E78194B36E70C9D3BDB4 /* ESCache-watchOS-dummy.m */,
+				514369E141E1B25F29556243790ECD7D /* ESCache-watchOS-Info.plist */,
+				E64898A35E983539D776F7AC8B8EC818 /* ESCache-watchOS-prefix.pch */,
+				2507CD89028EBF049E7585E38ACE4E69 /* ESCache-watchOS-umbrella.h */,
+				2F1685243FD9815753B59C1291DA1459 /* ESCache-watchOS.debug.xcconfig */,
+				46CB31D5F3FC5E2B7666EDA5978A587F /* ESCache-watchOS.release.xcconfig */,
 			);
-			name = Pod;
+			name = "Support Files";
+			path = "ESCache-Demo/Pods/Target Support Files/ESCache-iOS";
 			sourceTree = "<group>";
 		};
-		BBAF19423FA932750B2A859E887424A6 /* ESCache */ = {
+		AC964F8E8404E931106DD6D8B984A2DE /* ESCache */ = {
 			isa = PBXGroup;
 			children = (
-				6032DF3EA440C6C9C7E2547A2EEA65F0 /* ESCache.h */,
-				33F8DA0ECA115CCD4BB40E04DCBC7844 /* ESCache */,
-				B4B7C54EBFF3E81E91625C151F754AF7 /* Pod */,
-				0196B619A45FAD0B8F4917B5F041AF93 /* Support Files */,
+				F30799A95127E22186E2DF8FA5F241FB /* AutoPurgeCache.swift */,
+				F82ACAFE492C18E58F0715F11B224B6E /* Cacheable.swift */,
+				F3EB1FB5B9991517E0C34DBC9D69E734 /* CacheModel.swift */,
+				2D01C080FF64017AFF9A34E689CB3672 /* FileCache.swift */,
+				335BF102ADAC9C928A1CD7FB765A0331 /* MD5.swift */,
+				7D552E358325452BBECA648EA1C43BF5 /* MemoryCache.swift */,
 			);
 			name = ESCache;
-			path = ../..;
+			path = Sources/ESCache;
 			sourceTree = "<group>";
 		};
 		C78A157E017DAF52F02BDB84F153E74D /* iOS */ = {
@@ -522,6 +516,18 @@
 				2CAA341C12B2B7CC23D015E8DB208AD2 /* Products */,
 				404DC26AC54227F4EC12D896B56EFE3A /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D25709D45764233179DE104EBBBA30BB /* ESCache */ = {
+			isa = PBXGroup;
+			children = (
+				2C9F1D1250131F0F6EB2FB023D608664 /* ESCache.h */,
+				AC964F8E8404E931106DD6D8B984A2DE /* ESCache */,
+				6FECBF7FC2162E1793CECE132483E235 /* Pod */,
+				916E2AB94B67D513AB5A058521E0BC2E /* Support Files */,
+			);
+			name = ESCache;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		DA31E9CD513B39834D325348C3A73E53 /* Pods-ESCache-Demo-watchos WatchKit App */ = {
@@ -593,29 +599,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A0DF398E731C9D4E45EBF2E6BC34675 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E915B2616912BACDCF68B024C708485A /* ESCache-tvOS-umbrella.h in Headers */,
-				75CF83F3B10E7606CE33B86733691281 /* ESCache.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8455939F52E0A200DEFD7F41C165DF01 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7DCA05C70E225B08CB9B90A47E713772 /* Pods-ESCache-Demo-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		85FEDA132D890C7913538692087E89D8 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				81C50F197BAF38C1A58DAEF42D407DE4 /* ESCache-watchOS-umbrella.h in Headers */,
-				080C73311D39581FCE09370F7ED9A7BB /* ESCache.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,6 +615,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		98938B45C964096E5C18EE9BF2FE7586 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A5F095DA8B215C58C39F74331A8C4E9 /* ESCache-tvOS-umbrella.h in Headers */,
+				11E01A548F886EEF01A0CB54E6564242 /* ESCache.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C438DFDD02E54B034A0B1BDF642291CE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1973C151D93EF60F7EBEE95BCCFCC86 /* ESCache-macOS-umbrella.h in Headers */,
+				AE4C53C61EA735F8B81313232B043464 /* ESCache.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C7C516880D5FC0293B177EEAE54D5E67 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -635,21 +641,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4BD128602D614504A8C8900E449BEF4 /* Headers */ = {
+		C950D67C091636896DE28FB2A8158495 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54C5D947F9B8BC0DA8C06EF6BD7798C2 /* ESCache-iOS-umbrella.h in Headers */,
-				054476AB0ED997D3909C7B371232D77A /* ESCache.h in Headers */,
+				4970E481531CF7825693F0656F76C1AF /* ESCache-watchOS-umbrella.h in Headers */,
+				2EE29D2D1F5237012E23290EFC4F29B6 /* ESCache.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FDB0513326F7ADC25541E8E28E4ACC9C /* Headers */ = {
+		DC64C5B86D5820002AC42C3391BD360D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C07B504A80D048140CC42A2A8CE47D11 /* ESCache-macOS-umbrella.h in Headers */,
-				F0AF38C44ABF89A46F7FA7498489264E /* ESCache.h in Headers */,
+				3BD64B3A6ADBF3403406424E26F58517 /* ESCache-iOS-umbrella.h in Headers */,
+				A753E8B2298D35C97E5EA73F68ECE8B8 /* ESCache.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,12 +664,12 @@
 /* Begin PBXNativeTarget section */
 		10340FDE504ABFFBC21A291C3EF0796F /* ESCache-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B3856C800F1A19AB46C30223C650378F /* Build configuration list for PBXNativeTarget "ESCache-tvOS" */;
+			buildConfigurationList = BAFC61B4462105E14DDA589D975F1F0E /* Build configuration list for PBXNativeTarget "ESCache-tvOS" */;
 			buildPhases = (
-				2A0DF398E731C9D4E45EBF2E6BC34675 /* Headers */,
-				B7A530C6CB6CF291D9AFDF85D715BD1C /* Sources */,
-				2D0110372A0E79A9BFA06BD5EB5B8DE3 /* Frameworks */,
-				6A1DAFF4CDEE6CBE698E51EFD8C15105 /* Resources */,
+				98938B45C964096E5C18EE9BF2FE7586 /* Headers */,
+				A82A14E9872A823AD3508D2DA7B458CB /* Sources */,
+				9F3E6BF7DA117BC39CFA017607491460 /* Frameworks */,
+				C8A3C30C20CDC0DD34859C4F122684D9 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -686,7 +692,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				B77F8369250C91C81C14419AA4B3FC34 /* PBXTargetDependency */,
+				883A8C4C79BD99D0C8C1FA9E7FEEA708 /* PBXTargetDependency */,
 			);
 			name = "Pods-ESCache-Demo-watchos WatchKit App";
 			productName = "Pods-ESCache-Demo-watchos WatchKit App";
@@ -705,7 +711,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				162CA2D52A5DF342B168430A88CFFBF2 /* PBXTargetDependency */,
+				07D0024D3DB51F98A9FC64895B25B28A /* PBXTargetDependency */,
 			);
 			name = "Pods-ESCache-Demo-tvos";
 			productName = "Pods-ESCache-Demo-tvos";
@@ -724,7 +730,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				C94D827C03CB2F84038E3AABE82B3233 /* PBXTargetDependency */,
+				EF1F5E9D1A671396D138FEDA975DB21F /* PBXTargetDependency */,
 			);
 			name = "Pods-ESCache-Demo";
 			productName = "Pods-ESCache-Demo";
@@ -733,12 +739,12 @@
 		};
 		7E89D848EFB2E387E25240B76D929241 /* ESCache-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7973C7CE4B215A0FA9F366BF457E7944 /* Build configuration list for PBXNativeTarget "ESCache-macOS" */;
+			buildConfigurationList = 4DFFA329273A7C06DA4CB201344915AC /* Build configuration list for PBXNativeTarget "ESCache-macOS" */;
 			buildPhases = (
-				FDB0513326F7ADC25541E8E28E4ACC9C /* Headers */,
-				A0CDE63A459E26FFF27CFDF7410220C2 /* Sources */,
-				5F0299E966BB2A906EBFEC2940C265A5 /* Frameworks */,
-				E89AA2B5EDFEF349437CD058104BEE7D /* Resources */,
+				C438DFDD02E54B034A0B1BDF642291CE /* Headers */,
+				4E5DF05F6D9592EB6C9F4D9793000868 /* Sources */,
+				59C897C947E5D4303D4E25621F4E5EAB /* Frameworks */,
+				7A12F6230CE5E1A21D30249BD6DFFD12 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -751,12 +757,12 @@
 		};
 		A278F0A3C1D53C0BC0634328C755D932 /* ESCache-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3FD99491D21A6082AA870A59F75A1074 /* Build configuration list for PBXNativeTarget "ESCache-iOS" */;
+			buildConfigurationList = E309B660B0D40159C7DDC89CD58EAC27 /* Build configuration list for PBXNativeTarget "ESCache-iOS" */;
 			buildPhases = (
-				D4BD128602D614504A8C8900E449BEF4 /* Headers */,
-				D219049C06FD91A5C0E594DD20518812 /* Sources */,
-				4DA5AF90BF2B203CEA088AFE64778AD6 /* Frameworks */,
-				D18DF6C79C48E2F82C60521714C6B5A2 /* Resources */,
+				DC64C5B86D5820002AC42C3391BD360D /* Headers */,
+				A8451C3764DAB8AA966CE7D25110CD98 /* Sources */,
+				4187EBAF335AF78BE7019274E8BD3247 /* Frameworks */,
+				26F3B58BA7DEEF687203E5FECACEF2EA /* Resources */,
 			);
 			buildRules = (
 			);
@@ -779,7 +785,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				8D19E5CABB42D3ADC54EF6E8D6A5A89D /* PBXTargetDependency */,
+				E2F21F480AD371A1F851AA09250B62D0 /* PBXTargetDependency */,
 			);
 			name = "Pods-ESCache-Demo-watchos";
 			productName = "Pods-ESCache-Demo-watchos";
@@ -798,7 +804,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				0598DA6FA45B1BDE7ED905C8C0E53AEE /* PBXTargetDependency */,
+				1ECD20A985605249A2533089893D6F59 /* PBXTargetDependency */,
 			);
 			name = "Pods-ESCache-Demo-watchos WatchKit Extension";
 			productName = "Pods-ESCache-Demo-watchos WatchKit Extension";
@@ -807,12 +813,12 @@
 		};
 		ECEC3FFDF7C0A96EEC7668CE284BC3CD /* ESCache-watchOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A8F35BBB3DD3AEF9BD8B846B37E88E26 /* Build configuration list for PBXNativeTarget "ESCache-watchOS" */;
+			buildConfigurationList = 3DF2B3515BE166C666EFCFEAEB6EA081 /* Build configuration list for PBXNativeTarget "ESCache-watchOS" */;
 			buildPhases = (
-				85FEDA132D890C7913538692087E89D8 /* Headers */,
-				3403E587F23357B6F9FFBDAE7C8F5C28 /* Sources */,
-				DD0BBDF6D63643D9836C1CC82A626D49 /* Frameworks */,
-				1BDD96D221A7C1CACA8398BACA54C166 /* Resources */,
+				C950D67C091636896DE28FB2A8158495 /* Headers */,
+				CCD696128384C3F75610AA1B5DA53667 /* Sources */,
+				ED830C7EE1E647A5FB36DA0E55E330DC /* Frameworks */,
+				C563481E5973FDEBA6725A12ABA96EF2 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -835,7 +841,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				B2B70401157BC4A415DA9615EEE46561 /* PBXTargetDependency */,
+				8504FF9DE35413EB76DEDFA25403A3D7 /* PBXTargetDependency */,
 			);
 			name = "Pods-ESCache-Demo-macos";
 			productName = "Pods-ESCache-Demo-macos";
@@ -893,14 +899,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1BDD96D221A7C1CACA8398BACA54C166 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6A1DAFF4CDEE6CBE698E51EFD8C15105 /* Resources */ = {
+		26F3B58BA7DEEF687203E5FECACEF2EA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -908,6 +907,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		710595A9262F23EA8304172694F59C93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A12F6230CE5E1A21D30249BD6DFFD12 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -935,14 +941,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D18DF6C79C48E2F82C60521714C6B5A2 /* Resources */ = {
+		C563481E5973FDEBA6725A12ABA96EF2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E89AA2B5EDFEF349437CD058104BEE7D /* Resources */ = {
+		C8A3C30C20CDC0DD34859C4F122684D9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -960,16 +966,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3403E587F23357B6F9FFBDAE7C8F5C28 /* Sources */ = {
+		4E5DF05F6D9592EB6C9F4D9793000868 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE7E058C842DF08E6A52E53C6F7B44DE /* AutoPurgeCache.swift in Sources */,
-				17CBE54847CEE0AAB68595228CC337E6 /* Cacheable.swift in Sources */,
-				35E2F48742989A53D654992755D7C5C6 /* CacheModel.swift in Sources */,
-				64DFF4EAB8CC6A294219CC5C8B3F4D12 /* ESCache-watchOS-dummy.m in Sources */,
-				EF36E5B73617217698888B6B73906491 /* FileCache.swift in Sources */,
-				72AC06670A4C7DD99CCC61C07E06F684 /* MemoryCache.swift in Sources */,
+				EDB51AC4C7C2FC3C756E84A8D629FB9A /* AutoPurgeCache.swift in Sources */,
+				16EFBEADDEA3D7F81344DAA5F373600F /* Cacheable.swift in Sources */,
+				056AE6985333963BECAB6323DC6B8600 /* CacheModel.swift in Sources */,
+				12871F863AEE31047553E084ED77956C /* ESCache-macOS-dummy.m in Sources */,
+				A6F33E9E0F4F6E0F3DB40D336F58E816 /* FileCache.swift in Sources */,
+				0C0CA6851A4958721C0E08AE53E1585F /* MD5.swift in Sources */,
+				8272ED669B0FF0ECD9FBFBA2E1683CBB /* MemoryCache.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1005,29 +1012,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0CDE63A459E26FFF27CFDF7410220C2 /* Sources */ = {
+		A82A14E9872A823AD3508D2DA7B458CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D43BFE943FA1E8832E13980048E556E /* AutoPurgeCache.swift in Sources */,
-				75E1F316B2B5CE3A052393511D33767D /* Cacheable.swift in Sources */,
-				B67E267BEE5C37C2F0ABD42D6123792A /* CacheModel.swift in Sources */,
-				172924267A081FAC75F231DC07589193 /* ESCache-macOS-dummy.m in Sources */,
-				AC29C1DF9A30B9F65FF469F7087B9BCB /* FileCache.swift in Sources */,
-				9C663062C03F10CB2BD4EAB73E21D245 /* MemoryCache.swift in Sources */,
+				CAEF00641772267B1415202921846955 /* AutoPurgeCache.swift in Sources */,
+				9B06AE9409468B753099B9E2F1A6D4C3 /* Cacheable.swift in Sources */,
+				84F520E457219CE593EAB757062C63EA /* CacheModel.swift in Sources */,
+				0C93FAB5884D85AD98083A95F3557DD4 /* ESCache-tvOS-dummy.m in Sources */,
+				0873A564D877B20B58390F698CD1B93B /* FileCache.swift in Sources */,
+				ACDD5821F1C36AC37346812C30715907 /* MD5.swift in Sources */,
+				35EF42D24561779E20F4DB7FAE3E0062 /* MemoryCache.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7A530C6CB6CF291D9AFDF85D715BD1C /* Sources */ = {
+		A8451C3764DAB8AA966CE7D25110CD98 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFD7BE0E82BCA04BCA594A61C3F9F2B9 /* AutoPurgeCache.swift in Sources */,
-				EC03E0327B6ECBCBEAD61D5EE56B3D63 /* Cacheable.swift in Sources */,
-				0007A4A45F1DDE1DBBA8CBC6A4608CEE /* CacheModel.swift in Sources */,
-				ED56AE5CD2BBD935524DCC981593F972 /* ESCache-tvOS-dummy.m in Sources */,
-				329D5D75405D648682D1394CB1683782 /* FileCache.swift in Sources */,
-				03CAA5F7A7E50EF568E983FB1D0CB4D6 /* MemoryCache.swift in Sources */,
+				E30F5EE916CDBD3D84FB64B5084502B4 /* AutoPurgeCache.swift in Sources */,
+				ABFD54CFC5FE2DFF7DF417EE8FA44810 /* Cacheable.swift in Sources */,
+				4847C12D6078EB74A0880E55579B3FB1 /* CacheModel.swift in Sources */,
+				589D721B5BB7074C32D62150355CBFD5 /* ESCache-iOS-dummy.m in Sources */,
+				A8D8201965090573A5447DBCFA86B48E /* FileCache.swift in Sources */,
+				AADBD82FE82018238547C23A121D3BC0 /* MD5.swift in Sources */,
+				5F5530D39F198060302044AD178C0584 /* MemoryCache.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1039,64 +1048,65 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D219049C06FD91A5C0E594DD20518812 /* Sources */ = {
+		CCD696128384C3F75610AA1B5DA53667 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A448A557E71957F261A6FDF924831D70 /* AutoPurgeCache.swift in Sources */,
-				D888552D4BEC169ADE005B606E5A302F /* Cacheable.swift in Sources */,
-				6DAC23A4C4A6DCC8EEAEF02B6352F224 /* CacheModel.swift in Sources */,
-				4E4F01E2C60F98786950287A8B9C5110 /* ESCache-iOS-dummy.m in Sources */,
-				0724A6E0F6CEB64582E2F4B465DDADA2 /* FileCache.swift in Sources */,
-				42AB8E71090DE35E7C171256AD338595 /* MemoryCache.swift in Sources */,
+				9F23E0712BEFF0A7706C4140C6EC534B /* AutoPurgeCache.swift in Sources */,
+				593FA08CBC291CD422EABA2E2AF33C64 /* Cacheable.swift in Sources */,
+				12285E104417DDF03ECF0E6091B29CC5 /* CacheModel.swift in Sources */,
+				E155E8C13CA6EAB011268D8DAF022982 /* ESCache-watchOS-dummy.m in Sources */,
+				69816D31D2731012757BA5C46B148949 /* FileCache.swift in Sources */,
+				A4BA0D9FADB4282FD2080D723581CB62 /* MD5.swift in Sources */,
+				3DD212CF7EB41DE32F6E13EA7C69C4F4 /* MemoryCache.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0598DA6FA45B1BDE7ED905C8C0E53AEE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "ESCache-watchOS";
-			target = ECEC3FFDF7C0A96EEC7668CE284BC3CD /* ESCache-watchOS */;
-			targetProxy = A99476885D925A319252106037C9BBAB /* PBXContainerItemProxy */;
-		};
-		162CA2D52A5DF342B168430A88CFFBF2 /* PBXTargetDependency */ = {
+		07D0024D3DB51F98A9FC64895B25B28A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "ESCache-tvOS";
 			target = 10340FDE504ABFFBC21A291C3EF0796F /* ESCache-tvOS */;
-			targetProxy = 18B8947098BDD600B99DA598EB572B37 /* PBXContainerItemProxy */;
+			targetProxy = 29EFDD243F7393302E42CC895D8CDDA5 /* PBXContainerItemProxy */;
 		};
-		8D19E5CABB42D3ADC54EF6E8D6A5A89D /* PBXTargetDependency */ = {
+		1ECD20A985605249A2533089893D6F59 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "ESCache-watchOS";
 			target = ECEC3FFDF7C0A96EEC7668CE284BC3CD /* ESCache-watchOS */;
-			targetProxy = 13A0329A7FC3AC512459A22E6F225B3B /* PBXContainerItemProxy */;
+			targetProxy = 38411D7E2CFE7B2D9FD1612991BDA4A2 /* PBXContainerItemProxy */;
 		};
-		B2B70401157BC4A415DA9615EEE46561 /* PBXTargetDependency */ = {
+		8504FF9DE35413EB76DEDFA25403A3D7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "ESCache-macOS";
 			target = 7E89D848EFB2E387E25240B76D929241 /* ESCache-macOS */;
-			targetProxy = BE26554197385B9C96C6AFBB99AAF514 /* PBXContainerItemProxy */;
+			targetProxy = E76E1DC0BEB789C236866ACE20E50EA6 /* PBXContainerItemProxy */;
 		};
-		B77F8369250C91C81C14419AA4B3FC34 /* PBXTargetDependency */ = {
+		883A8C4C79BD99D0C8C1FA9E7FEEA708 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "ESCache-watchOS";
 			target = ECEC3FFDF7C0A96EEC7668CE284BC3CD /* ESCache-watchOS */;
-			targetProxy = F978A8922E2A107D96BC60425086EBFA /* PBXContainerItemProxy */;
+			targetProxy = AF3F7C98AB442B09AA1D8A33466D3145 /* PBXContainerItemProxy */;
 		};
-		C94D827C03CB2F84038E3AABE82B3233 /* PBXTargetDependency */ = {
+		E2F21F480AD371A1F851AA09250B62D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ESCache-watchOS";
+			target = ECEC3FFDF7C0A96EEC7668CE284BC3CD /* ESCache-watchOS */;
+			targetProxy = DD6E2D58831BD5143014902BFBF78C94 /* PBXContainerItemProxy */;
+		};
+		EF1F5E9D1A671396D138FEDA975DB21F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "ESCache-iOS";
 			target = A278F0A3C1D53C0BC0634328C755D932 /* ESCache-iOS */;
-			targetProxy = 6E98BA2A71A4ED127C86E63DCF2F333E /* PBXContainerItemProxy */;
+			targetProxy = 46AABEF04583F71CAC2AA4A5BB12D34B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2F2A9FD4E8C273E233577DAD1F534111 /* Release */ = {
+		0D5E3502C9C4743807826DD090DA370E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0505E3E488DA7832AB7E50BAD0AA2B4 /* ESCache-iOS.release.xcconfig */;
+			baseConfigurationReference = E9553DFEEBA5FCDE6C3340F7DEC8F4DB /* ESCache-iOS.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1129,9 +1139,9 @@
 			};
 			name = Release;
 		};
-		3068553DE6959851603E46E6F0964A60 /* Debug */ = {
+		0E638A3CDA302458B5573053B22DFD5F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 291952A73681E2D34BD7D2FF39001C40 /* ESCache-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 865CFE8416E19590696DD2CA7BC0104A /* ESCache-tvOS.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1200,40 +1210,6 @@
 			};
 			name = Debug;
 		};
-		3DA9BA236EADB211A464B5089AB983D9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C559484B95BD6FB3A8DA770828BD86E7 /* ESCache-iOS.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ESCache-iOS/ESCache-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ESCache-iOS/ESCache-iOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/ESCache-iOS/ESCache-iOS.modulemap";
-				PRODUCT_MODULE_NAME = ESCache;
-				PRODUCT_NAME = ESCache;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		49953514B34CB1973910DFFF72DFFACA /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4FDE2676342514ADF5FB57A81CAA2AF9 /* Pods-ESCache-Demo-macos.release.xcconfig */;
@@ -1272,41 +1248,40 @@
 			};
 			name = Release;
 		};
-		5680F1EE394367981F73DE2FAA009636 /* Release */ = {
+		7279E270D967D2B30C1F437A5F6DA2E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82B75A6D97AAAE7FD6A87519D66A9746 /* ESCache-macOS.release.xcconfig */;
+			baseConfigurationReference = 2F1685243FD9815753B59C1291DA1459 /* ESCache-watchOS.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ESCache-macOS/ESCache-macOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ESCache-macOS/ESCache-macOS-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ESCache-watchOS/ESCache-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ESCache-watchOS/ESCache-watchOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
+					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MODULEMAP_FILE = "Target Support Files/ESCache-macOS/ESCache-macOS.modulemap";
+				MODULEMAP_FILE = "Target Support Files/ESCache-watchOS/ESCache-watchOS.modulemap";
 				PRODUCT_MODULE_NAME = ESCache;
 				PRODUCT_NAME = ESCache;
-				SDKROOT = macosx;
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
-			name = Release;
+			name = Debug;
 		};
 		75033F65F560088362E7782286DF243C /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1373,9 +1348,9 @@
 			};
 			name = Release;
 		};
-		857D86493267BA59890FC536276B5DD2 /* Debug */ = {
+		85FF96DA76B9ADE4B1C991F12BDD557C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1153532CF931D1D1EAD7910C1906A10F /* ESCache-watchOS.debug.xcconfig */;
+			baseConfigurationReference = 46CB31D5F3FC5E2B7666EDA5978A587F /* ESCache-watchOS.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1402,11 +1377,47 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
-			name = Debug;
+			name = Release;
+		};
+		88512B4BE62A194DDCF9C1D035330777 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6313367AF88B147A677048F64BBFAFF /* ESCache-tvOS.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ESCache-tvOS/ESCache-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ESCache-tvOS/ESCache-tvOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ESCache-tvOS/ESCache-tvOS.modulemap";
+				PRODUCT_MODULE_NAME = ESCache;
+				PRODUCT_NAME = ESCache;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		8C4434491BDD84C821BB34DA70E01C87 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1439,6 +1450,40 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.10;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8C65B73892B6C79323655854F3FB51FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE018F879148B82F3500884832D4716C /* ESCache-iOS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ESCache-iOS/ESCache-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ESCache-iOS/ESCache-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ESCache-iOS/ESCache-iOS.modulemap";
+				PRODUCT_MODULE_NAME = ESCache;
+				PRODUCT_NAME = ESCache;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1518,6 +1563,42 @@
 			};
 			name = Release;
 		};
+		985C2DA294683C92FF6D22CD3377C758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46EAB6D038B782E1F7051232A8027857 /* ESCache-macOS.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ESCache-macOS/ESCache-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ESCache-macOS/ESCache-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/ESCache-macOS/ESCache-macOS.modulemap";
+				PRODUCT_MODULE_NAME = ESCache;
+				PRODUCT_NAME = ESCache;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		A4548B52C15745BE3F69A10F99A2535E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AFDF36237D23D81A3DA1B3806C415581 /* Pods-ESCache-Demo-tvos.release.xcconfig */;
@@ -1592,9 +1673,9 @@
 			};
 			name = Debug;
 		};
-		AF162EC37D8139E187D3C8A1D87BB9EE /* Debug */ = {
+		BA0EB630E5FCC7F06D7D10A41329C9DD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88396F1B254E25E66FBF107149F007E6 /* ESCache-macOS.debug.xcconfig */;
+			baseConfigurationReference = 33BA7E1FA7E62E5488A5D3BECA15886C /* ESCache-macOS.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1626,7 +1707,7 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		CD64DED10B2DD8B357968E559F396580 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1847,77 +1928,6 @@
 			};
 			name = Release;
 		};
-		DEF23EE67457A85904E9429D2EDC41A7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 250E0EE17BD895EA46726FF74F2A3205 /* ESCache-tvOS.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ESCache-tvOS/ESCache-tvOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ESCache-tvOS/ESCache-tvOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/ESCache-tvOS/ESCache-tvOS.modulemap";
-				PRODUCT_MODULE_NAME = ESCache;
-				PRODUCT_NAME = ESCache;
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 10.0;
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E496398F74A0392786B2508D14B7EFFE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E41C71A4129EC747D50E1FAEBF11DC50 /* ESCache-watchOS.release.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ESCache-watchOS/ESCache-watchOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ESCache-watchOS/ESCache-watchOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/ESCache-watchOS/ESCache-watchOS.modulemap";
-				PRODUCT_MODULE_NAME = ESCache;
-				PRODUCT_NAME = ESCache;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
-			};
-			name = Release;
-		};
 		E6DDCB611A8113933B0B6C4D4DFEFEB1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FB542FB79C4C0F480D722FF550451F87 /* Pods-ESCache-Demo-watchos WatchKit Extension.release.xcconfig */;
@@ -1977,11 +1987,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3FD99491D21A6082AA870A59F75A1074 /* Build configuration list for PBXNativeTarget "ESCache-iOS" */ = {
+		3DF2B3515BE166C666EFCFEAEB6EA081 /* Build configuration list for PBXNativeTarget "ESCache-watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3DA9BA236EADB211A464B5089AB983D9 /* Debug */,
-				2F2A9FD4E8C273E233577DAD1F534111 /* Release */,
+				7279E270D967D2B30C1F437A5F6DA2E3 /* Debug */,
+				85FF96DA76B9ADE4B1C991F12BDD557C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1991,6 +2001,15 @@
 			buildConfigurations = (
 				CD64DED10B2DD8B357968E559F396580 /* Debug */,
 				75033F65F560088362E7782286DF243C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DFFA329273A7C06DA4CB201344915AC /* Build configuration list for PBXNativeTarget "ESCache-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				985C2DA294683C92FF6D22CD3377C758 /* Debug */,
+				BA0EB630E5FCC7F06D7D10A41329C9DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2013,15 +2032,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7973C7CE4B215A0FA9F366BF457E7944 /* Build configuration list for PBXNativeTarget "ESCache-macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AF162EC37D8139E187D3C8A1D87BB9EE /* Debug */,
-				5680F1EE394367981F73DE2FAA009636 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		8C058E13477D8EDD07DA0F820F005A41 /* Build configuration list for PBXNativeTarget "Pods-ESCache-Demo-watchos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2040,20 +2050,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A8F35BBB3DD3AEF9BD8B846B37E88E26 /* Build configuration list for PBXNativeTarget "ESCache-watchOS" */ = {
+		BAFC61B4462105E14DDA589D975F1F0E /* Build configuration list for PBXNativeTarget "ESCache-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				857D86493267BA59890FC536276B5DD2 /* Debug */,
-				E496398F74A0392786B2508D14B7EFFE /* Release */,
+				0E638A3CDA302458B5573053B22DFD5F /* Debug */,
+				88512B4BE62A194DDCF9C1D035330777 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B3856C800F1A19AB46C30223C650378F /* Build configuration list for PBXNativeTarget "ESCache-tvOS" */ = {
+		E309B660B0D40159C7DDC89CD58EAC27 /* Build configuration list for PBXNativeTarget "ESCache-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3068553DE6959851603E46E6F0964A60 /* Debug */,
-				DEF23EE67457A85904E9429D2EDC41A7 /* Release */,
+				8C65B73892B6C79323655854F3FB51FC /* Debug */,
+				0D5E3502C9C4743807826DD090DA370E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

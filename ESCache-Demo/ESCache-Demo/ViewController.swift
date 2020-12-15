@@ -34,8 +34,25 @@ class ViewController: UIViewController {
         FileCache.cache.save("saveValue", for: "saveKey")
         let value = FileCache.cache.string(for: "saveKey")
         print(value ?? "")
+        
+        let codableObject = CodableObject(name: "name", age: 17)
+        let saveSuccess = FileCache.cache.save(codableObject, for: "v6/portal?name=name&age=17")
+        if saveSuccess == true {
+            let obj = FileCache.cache.codable(for: "v6/portal?name=name&age=17", type: CodableObject.self)
+            print(obj)
+        }
     }
 
 
 }
 
+
+struct CodableObject: Codable {
+    var name: String?
+    var age: Int?
+    
+    init(name: String?, age: Int?) {
+        self.name = name
+        self.age = age
+    }
+}
