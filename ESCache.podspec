@@ -27,5 +27,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = ["Sources/**/*.swift", "Sources/ESCache.h"]
 
+  s.frameworks = "CommonCrypto"
+
   s.requires_arc = true
 end
