@@ -6,7 +6,8 @@ target 'ESCache-Demo' do
   use_frameworks!
   platform :ios, '9.0'
 
- pod 'ESCache', :path => '../'
+# pod 'ESCache', :path => '../'
+pod 'ESCache', :path => '../'
 
 end
 
