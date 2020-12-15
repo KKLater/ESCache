@@ -107,7 +107,7 @@ public class FileCache {
     }
         
     fileprivate func url(for key: String) -> URL {
-        return directoryUrl.appendingPathComponent(key, isDirectory: false)
+        return directoryUrl.appendingPathComponent(key.md5(), isDirectory: false)
     }
     
     @objc public func cleanMemoryCache() {
@@ -330,5 +330,14 @@ extension FileCache: Cacheable {
             try? FileManager.default.removeItem(at: self.directoryUrl)
             try? FileManager.default.createDirectory(at: self.directoryUrl, withIntermediateDirectories: true, attributes: nil)
         }
+    }
+}
+
+extension String {
+    func md5() -> String {
+        let utf8 = cString(using: .utf8)
+        var digest = [UInt8](repeating: 0, count: Int(CC_MD5_DIGEST_LENGTH))
+        CC_MD5(utf8, CC_LONG(utf8!.count - 1), &digest)
+        return digest.reduce("") { $0 + String(format:"%02X", $1) }
     }
 }
